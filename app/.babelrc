@@ -1,4 +1,3 @@
 {
-    "presets": ["es2015", "stage-2"], //Set transcoding rules
-         "plugins": ["transform-runtime"] //Set the plugin
+    "presets": ["@babel/preset-env"]
  } 

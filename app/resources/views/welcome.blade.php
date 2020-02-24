@@ -12,6 +12,6 @@
     </head>
     <body>
         <div id="client"></div>
-        <script src="../js/app.js" type="text/javascript"></script>
+        <script src="../js/app.jsx" type="text/javascript"></script>
     </body>
 </html>
