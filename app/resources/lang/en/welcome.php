@@ -5,10 +5,21 @@
     | Welcome Page Language Lines
     |--------------------------------------------------------------------------
     |
+    --------------------------------------------------------------------------
+    NOTES: 
+        * CAPS will be handled in their respective tags
+        * Call to actions have a 'message', the corresponding
+            button being an 'action'
+    --------------------------------------------------------------------------
 */
+
 
 return [
     'tagline' => 'Your tool of choice to manage your couple goals.',
+    'login_c2a' => [
+        'message' => 'Already have a profile? ',
+        'action' => 'login'
+    ],
     'features' => [
         'intro' => 'What can I use it for?',
         'list' => [
@@ -28,7 +39,7 @@ return [
     ],
     'demo' => [
         'title' => 'Demo title',
-        'open' => 'View'
+        'action' => 'View'
     ]
 ];
 
