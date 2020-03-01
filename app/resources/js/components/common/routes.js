@@ -1,5 +1,7 @@
 export const appRoutes = {
     HOME: '/',
-    MAIN_DASHBOARD: '/dashboard',
-    CATEGORIES_INDEX: '/categories',
+    LOGIN: '/login',
+    DASHBOARD: '/dashboard',
+    CATEGORIES: '/categories',
+    PROFILE: './profile',
 };

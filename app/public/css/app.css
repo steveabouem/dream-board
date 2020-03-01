@@ -17,6 +17,52 @@ a {
   right: 0;
 }
 
+#client .login-bar-wrap {
+  height: auto;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+  align-items: center;
+  background: #8856d817;
+  color: #9a7979;
+}
+
+#client .login-bar-wrap .action-register {
+  flex: 1;
+  padding: 0 0 0 5px;
+}
+
+#client .login-bar-wrap .login-bar {
+  display: flex;
+  padding: 0 1%;
+  flex: 0 1 auto;
+  align-self: center;
+}
+
+#client .login-bar-wrap .login-bar div {
+  display: flex;
+  flex: 0 1 auto;
+  align-self: center;
+  word-break: keep-all;
+}
+
+#client .login-bar-wrap .login-bar div:first-of-type {
+  padding: 0 5px 0 0;
+}
+
+#client .login-bar-wrap .login-bar div.action-login {
+  font-weight: 600;
+}
+
+#client .login-bar-wrap .login-bar div.action-login a {
+  color: #a77f8a;
+}
+
+#client .login-bar-wrap .login-bar div.action-login a:hover {
+  color: #604d52;
+}
+
 #client .header-wrap {
   position: relative;
   height: auto;
@@ -38,7 +84,7 @@ a {
 }
 
 #client .header-wrap .header .nav-wrap.topnav .nav-cell {
-  flex: 1 1 25%;
+  flex: 1 1 20%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -53,21 +99,45 @@ a {
 
 #client .header-wrap .header .nav-wrap.topnav .nav-cell.active {
   color: white;
-  background: #12a9ab;
+  background: #12a9abde;
+}
+
+#client .header-wrap .header .nav-wrap.topnav .nav-cell.logo:hover {
+  background: white;
+  color: #a5a5a5;
 }
 
 #client .header-wrap .header .nav-wrap.topnav .nav-cell:hover {
-  background: #12a9ab;
-  color: white;
+  background: #12a9abde;
+  color: #c9f0ff;
+}
+
+#client .header-wrap .header .nav-wrap.topnav .nav-cell:hover div {
+  margin: 0 auto 5% auto;
+  transition: 0.5s;
 }
 
 #client .content-wrap {
-  height: 100%;
+  height: 90%;
   top: 0;
+  background: linear-gradient(151deg, #30ac8ead, #0096dad4);
+  color: #0d1224;
 }
 
 #client .content-wrap .content {
   display: flex;
   flex-direction: column;
+}
+
+#client .app-footer-wrap {
+  height: 10%;
+  background: black;
+  color: #cce2ea;
+  display: flex;
+}
+
+#client .app-footer-wrap div {
+  flex: 1;
+  text-align: center;
 }
 
