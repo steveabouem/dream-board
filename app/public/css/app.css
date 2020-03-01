@@ -2,3 +2,72 @@ li {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+}
+
+#client {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#client .header-wrap {
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+
+#client .header-wrap .header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 1px #00000073;
+}
+
+#client .header-wrap .header .nav-wrap.topnav {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  align-items: center;
+}
+
+#client .header-wrap .header .nav-wrap.topnav .nav-cell {
+  flex: 1 1 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #a5a5a5;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#client .header-wrap .header .nav-wrap.topnav .nav-cell div {
+  margin: auto;
+}
+
+#client .header-wrap .header .nav-wrap.topnav .nav-cell.active {
+  color: white;
+  background: #12a9ab;
+}
+
+#client .header-wrap .header .nav-wrap.topnav .nav-cell:hover {
+  background: #12a9ab;
+  color: white;
+}
+
+#client .content-wrap {
+  height: 100%;
+  top: 0;
+}
+
+#client .content-wrap .content {
+  display: flex;
+  flex-direction: column;
+}
+

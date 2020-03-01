@@ -1,3 +1,81 @@
+//Common rules_______________________________________________
 li {
     list-style-type: none;
 }
+a {
+    text-decoration: none;
+}
+
+// Standalone rules__________________________________________
+
+
+// Main app container________________________________________
+#client {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+
+// Header ___________________________________________________
+    .header-wrap {
+        position: relative;
+        height: auto;
+        width: 100%;
+        .header {
+            height: 50px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 1px #00000073;
+// Nav bar __________________________________________________
+            .nav-wrap {
+                &.topnav {
+                    display: flex;
+                    flex: 1;
+                    height: 100%;
+                    align-items: center;
+// Topnav cells______________________________________________
+                    .nav-cell {
+                        flex: 1 1 25%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        color: #a5a5a5;
+                        font-weight: 600;
+                        text-transform: uppercase;
+
+                        div {
+                            margin: auto;
+                        }
+
+                        &.active {
+                            color: white;
+                            background: #12a9ab;
+                        }
+
+                        &:hover {
+                            background: #12a9ab;
+                            color: white;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+// Main section wrap_________________________________________
+    .content-wrap {
+        height: 100%;
+        top: 0;
+
+//  Inner sections
+        .content {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}//Main app container
