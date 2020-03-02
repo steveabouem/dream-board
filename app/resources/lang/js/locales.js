@@ -1,7 +1,11 @@
 import Lang from 'lang.js';
 
 export const locales = {
+    // EN
     'en.welcome': require('../en/welcome.php'),
+    'en.menus': require('../en/menus.php'),
+
+    // FR
     'fr.welcome': require('../fr/welcome.php'),
 };
 

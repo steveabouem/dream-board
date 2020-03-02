@@ -42,18 +42,17 @@ export const Content = ({children}) => (
 );
 
 export const LoginBar = () => {
+    const [active, setActive] = useState(false);
+
     return (
-        <div className="login-bar-wrap">
-            <div className="action-register">
-                <div>Register</div>
-            </div>
+        <div className={'login-bar-wrap' + ( active ? ' active' : '')} onMouseEnter={() => setActive(true)}>
             <div className="login-bar">
                 <div>
-                    {trans('welcome.login_c2a.message')}
+                    {trans('menus.login.message')}
                 </div>
                 <div className="action-login">
                     <NavLink to={appRoutes.LOGIN}>
-                        {trans('welcome.login_c2a.action')}
+                        {trans('menus.login.action_login')}
                     </NavLink>
                 </div>
             </div>

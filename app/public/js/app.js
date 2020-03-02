@@ -56568,6 +56568,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_spinners__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_spinners__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./routes */ "./resources/js/components/common/routes.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 function _EMOTION_STRINGIFIED_CSS_ERROR__() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 
 
@@ -56579,7 +56587,7 @@ function _EMOTION_STRINGIFIED_CSS_ERROR__() { return "You have tried to stringif
 var _ref =  false ? undefined : {
   name: "1pxrpzr-override",
   styles: "margin:20% auto;label:override;",
-  map: "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcQWRtaW5cXERlc2t0b3BcXFdFQiBERVZcXEZSRUVMQU5DRVxcUE9SVEZPTElPXFxEUkVBTV9CT0FSRFxcYXBwXFxyZXNvdXJjZXNcXGpzXFxjb21wb25lbnRzXFxjb21tb25cXGluZGV4LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQU95QiIsImZpbGUiOiJDOlxcVXNlcnNcXEFkbWluXFxEZXNrdG9wXFxXRUIgREVWXFxGUkVFTEFOQ0VcXFBPUlRGT0xJT1xcRFJFQU1fQk9BUkRcXGFwcFxccmVzb3VyY2VzXFxqc1xcY29tcG9uZW50c1xcY29tbW9uXFxpbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCwge3VzZUVmZmVjdCwgdXNlU3RhdGV9IGZyb20gJ3JlYWN0JztcclxuaW1wb3J0IHsgY3NzIH0gZnJvbSBcIkBlbW90aW9uL2NvcmVcIjtcclxuaW1wb3J0IHsgUmluZ0xvYWRlcn0gZnJvbSAncmVhY3Qtc3Bpbm5lcnMnO1xyXG5pbXBvcnQgeyBOYXZMaW5rIH0gZnJvbSAncmVhY3Qtcm91dGVyLWRvbSc7XHJcbmltcG9ydCB7IGFwcFJvdXRlcyB9IGZyb20gJy4vcm91dGVzJztcclxuXHJcbmV4cG9ydCBjb25zdCBMb2FkZXIgPSAoKSA9PiB7XHJcbiAgICBjb25zdCBvdmVycmlkZSA9IGNzcyBgXHJcbiAgICAgICAgbWFyZ2luOiAyMCUgYXV0b1xyXG4gICAgYDtcclxuXHJcbiAgICByZXR1cm4gKFxyXG4gICAgICAgIDxSaW5nTG9hZGVyXHJcbiAgICAgICAgICAgIGNzcz17b3ZlcnJpZGV9XHJcbiAgICAgICAgICAgIGNvbG9yPXsnIzUzNGZhMCd9XHJcbiAgICAgICAgLz5cclxuICAgICk7XHJcbn07XHJcblxyXG5leHBvcnQgY29uc3QgSGVhZGVyID0gKHtjaGlsZHJlbn0pID0+IChcclxuICAgIDxkaXYgY2xhc3NOYW1lPVwiaGVhZGVyLXdyYXBcIj5cclxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImhlYWRlclwiPlxyXG4gICAgICAgICAgICB7Y2hpbGRyZW59XHJcbiAgICAgICAgPC9kaXY+XHJcbiAgICA8L2Rpdj5cclxuKTtcclxuXHJcbmV4cG9ydCBjb25zdCBDb250ZW50SGVhZGVyID0oe2NoaWxkcmVufSkgPT4gKFxyXG4gICAgPGRpdiBjbGFzc05hbWU9XCJjb250ZW50LWhlYWRlci13cmFwXCI+XHJcbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250ZW50LWhlYWRlclwiPlxyXG4gICAgICAgICAgICB7Y2hpbGRyZW59XHJcbiAgICAgICAgPC9kaXY+XHJcbiAgICA8L2Rpdj5cclxuKTtcclxuXHJcbmV4cG9ydCBjb25zdCBDb250ZW50ID0gKHtjaGlsZHJlbn0pID0+IChcclxuICAgIDxkaXYgY2xhc3NOYW1lPVwiY29udGVudC13cmFwXCI+XHJcbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250ZW50XCI+XHJcbiAgICAgICAgICAgIHtjaGlsZHJlbn1cclxuICAgICAgICA8L2Rpdj5cclxuICAgIDwvZGl2PlxyXG4pO1xyXG5cclxuZXhwb3J0IGNvbnN0IExvZ2luQmFyID0gKCkgPT4ge1xyXG4gICAgcmV0dXJuIChcclxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImxvZ2luLWJhci13cmFwXCI+XHJcbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYWN0aW9uLXJlZ2lzdGVyXCI+XHJcbiAgICAgICAgICAgICAgICA8ZGl2PlJlZ2lzdGVyPC9kaXY+XHJcbiAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImxvZ2luLWJhclwiPlxyXG4gICAgICAgICAgICAgICAgPGRpdj5cclxuICAgICAgICAgICAgICAgICAgICB7dHJhbnMoJ3dlbGNvbWUubG9naW5fYzJhLm1lc3NhZ2UnKX1cclxuICAgICAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJhY3Rpb24tbG9naW5cIj5cclxuICAgICAgICAgICAgICAgICAgICA8TmF2TGluayB0bz17YXBwUm91dGVzLkxPR0lOfT5cclxuICAgICAgICAgICAgICAgICAgICAgICAge3RyYW5zKCd3ZWxjb21lLmxvZ2luX2MyYS5hY3Rpb24nKX1cclxuICAgICAgICAgICAgICAgICAgICA8L05hdkxpbms+XHJcbiAgICAgICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgPC9kaXY+XHJcbiAgICApO1xyXG59O1xyXG5cclxuZXhwb3J0IGNvbnN0IEZvb3RlciA9ICgpID0+IChcclxuICAgIDxkaXYgY2xhc3NOYW1lPVwiYXBwLWZvb3Rlci13cmFwXCI+XHJcbiAgICAgICAgPGRpdj5jcmVkZW50aWFsIGxlZnQ8L2Rpdj5cclxuICAgICAgICA8ZGl2PmNyZWRlbnRpYWwgcmlnaHQ8L2Rpdj5cclxuICAgIDwvZGl2PlxyXG4pO1xyXG4iXX0= */",
+  map: "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcQWRtaW5cXERlc2t0b3BcXFdFQiBERVZcXEZSRUVMQU5DRVxcUE9SVEZPTElPXFxEUkVBTV9CT0FSRFxcYXBwXFxyZXNvdXJjZXNcXGpzXFxjb21wb25lbnRzXFxjb21tb25cXGluZGV4LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQU95QiIsImZpbGUiOiJDOlxcVXNlcnNcXEFkbWluXFxEZXNrdG9wXFxXRUIgREVWXFxGUkVFTEFOQ0VcXFBPUlRGT0xJT1xcRFJFQU1fQk9BUkRcXGFwcFxccmVzb3VyY2VzXFxqc1xcY29tcG9uZW50c1xcY29tbW9uXFxpbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCwge3VzZUVmZmVjdCwgdXNlU3RhdGV9IGZyb20gJ3JlYWN0JztcclxuaW1wb3J0IHsgY3NzIH0gZnJvbSBcIkBlbW90aW9uL2NvcmVcIjtcclxuaW1wb3J0IHsgUmluZ0xvYWRlcn0gZnJvbSAncmVhY3Qtc3Bpbm5lcnMnO1xyXG5pbXBvcnQgeyBOYXZMaW5rIH0gZnJvbSAncmVhY3Qtcm91dGVyLWRvbSc7XHJcbmltcG9ydCB7IGFwcFJvdXRlcyB9IGZyb20gJy4vcm91dGVzJztcclxuXHJcbmV4cG9ydCBjb25zdCBMb2FkZXIgPSAoKSA9PiB7XHJcbiAgICBjb25zdCBvdmVycmlkZSA9IGNzcyBgXHJcbiAgICAgICAgbWFyZ2luOiAyMCUgYXV0b1xyXG4gICAgYDtcclxuXHJcbiAgICByZXR1cm4gKFxyXG4gICAgICAgIDxSaW5nTG9hZGVyXHJcbiAgICAgICAgICAgIGNzcz17b3ZlcnJpZGV9XHJcbiAgICAgICAgICAgIGNvbG9yPXsnIzUzNGZhMCd9XHJcbiAgICAgICAgLz5cclxuICAgICk7XHJcbn07XHJcblxyXG5leHBvcnQgY29uc3QgSGVhZGVyID0gKHtjaGlsZHJlbn0pID0+IChcclxuICAgIDxkaXYgY2xhc3NOYW1lPVwiaGVhZGVyLXdyYXBcIj5cclxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImhlYWRlclwiPlxyXG4gICAgICAgICAgICB7Y2hpbGRyZW59XHJcbiAgICAgICAgPC9kaXY+XHJcbiAgICA8L2Rpdj5cclxuKTtcclxuXHJcbmV4cG9ydCBjb25zdCBDb250ZW50SGVhZGVyID0oe2NoaWxkcmVufSkgPT4gKFxyXG4gICAgPGRpdiBjbGFzc05hbWU9XCJjb250ZW50LWhlYWRlci13cmFwXCI+XHJcbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250ZW50LWhlYWRlclwiPlxyXG4gICAgICAgICAgICB7Y2hpbGRyZW59XHJcbiAgICAgICAgPC9kaXY+XHJcbiAgICA8L2Rpdj5cclxuKTtcclxuXHJcbmV4cG9ydCBjb25zdCBDb250ZW50ID0gKHtjaGlsZHJlbn0pID0+IChcclxuICAgIDxkaXYgY2xhc3NOYW1lPVwiY29udGVudC13cmFwXCI+XHJcbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250ZW50XCI+XHJcbiAgICAgICAgICAgIHtjaGlsZHJlbn1cclxuICAgICAgICA8L2Rpdj5cclxuICAgIDwvZGl2PlxyXG4pO1xyXG5cclxuZXhwb3J0IGNvbnN0IExvZ2luQmFyID0gKCkgPT4ge1xyXG4gICAgY29uc3QgW2FjdGl2ZSwgc2V0QWN0aXZlXSA9IHVzZVN0YXRlKGZhbHNlKTtcclxuXHJcbiAgICByZXR1cm4gKFxyXG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPXsnbG9naW4tYmFyLXdyYXAnICsgKCBhY3RpdmUgPyAnIGFjdGl2ZScgOiAnJyl9IG9uTW91c2VFbnRlcj17KCkgPT4gc2V0QWN0aXZlKHRydWUpfT5cclxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJsb2dpbi1iYXJcIj5cclxuICAgICAgICAgICAgICAgIDxkaXY+XHJcbiAgICAgICAgICAgICAgICAgICAge3RyYW5zKCdtZW51cy5sb2dpbi5tZXNzYWdlJyl9XHJcbiAgICAgICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYWN0aW9uLWxvZ2luXCI+XHJcbiAgICAgICAgICAgICAgICAgICAgPE5hdkxpbmsgdG89e2FwcFJvdXRlcy5MT0dJTn0+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHt0cmFucygnbWVudXMubG9naW4uYWN0aW9uX2xvZ2luJyl9XHJcbiAgICAgICAgICAgICAgICAgICAgPC9OYXZMaW5rPlxyXG4gICAgICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgKTtcclxufTtcclxuXHJcbmV4cG9ydCBjb25zdCBGb290ZXIgPSAoKSA9PiAoXHJcbiAgICA8ZGl2IGNsYXNzTmFtZT1cImFwcC1mb290ZXItd3JhcFwiPlxyXG4gICAgICAgIDxkaXY+Y3JlZGVudGlhbCBsZWZ0PC9kaXY+XHJcbiAgICAgICAgPGRpdj5jcmVkZW50aWFsIHJpZ2h0PC9kaXY+XHJcbiAgICA8L2Rpdj5cclxuKTtcclxuIl19 */",
   toString: _EMOTION_STRINGIFIED_CSS_ERROR__
 };
 
@@ -56615,17 +56623,23 @@ var Content = function Content(_ref4) {
   }, children));
 };
 var LoginBar = function LoginBar() {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      _useState2 = _slicedToArray(_useState, 2),
+      active = _useState2[0],
+      setActive = _useState2[1];
+
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "login-bar-wrap"
+    className: 'login-bar-wrap' + (active ? ' active' : ''),
+    onMouseEnter: function onMouseEnter() {
+      return setActive(true);
+    }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "action-register"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Register")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "login-bar"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, trans('welcome.login_c2a.message')), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, trans('menus.login.message')), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "action-login"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["NavLink"], {
     to: _routes__WEBPACK_IMPORTED_MODULE_4__["appRoutes"].LOGIN
-  }, trans('welcome.login_c2a.action')))));
+  }, trans('menus.login.action_login')))));
 };
 var Footer = function Footer() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -56702,19 +56716,19 @@ var Topnav = function Topnav() {
     exact: true,
     className: "nav-cell",
     activeClassName: "active"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Dream board")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, trans('menus.topnav.links.home'))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
     className: "nav-cell",
     activeClassName: "active",
     to: _common_routes_js__WEBPACK_IMPORTED_MODULE_2__["appRoutes"].DASHBOARD
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "dashboard")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, trans('menus.topnav.links.dashboard'))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
     to: _common_routes_js__WEBPACK_IMPORTED_MODULE_2__["appRoutes"].CATEGORIES,
     className: "nav-cell",
     activeClassName: "active"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "categories")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, trans('menus.topnav.links.categories'))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
     className: "nav-cell",
     activeClassName: "active",
     to: _common_routes_js__WEBPACK_IMPORTED_MODULE_2__["appRoutes"].PROFILE
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "profile")));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, trans('menus.topnav.links.profile'))));
 };
 
 /***/ }),
@@ -56733,8 +56747,35 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
 var Welcome = function Welcome() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null);
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "tagline-section-wrap"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "tagline-section-left"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "tagline-title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, trans('welcome.tagline')))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "tagline-section-right"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "tagline-section-wrap"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "tagline-section-left"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "tagline-title"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, trans('welcome.tagline')))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "tagline-section-right"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null))));
 };
+
+/***/ }),
+
+/***/ "./resources/lang/en/menus.php":
+/*!*************************************!*\
+  !*** ./resources/lang/en/menus.php ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {"topnav":{"links":{"home":"dream board","categories":"categories","profile":"profile","dashboard":"dashboard"}},"login":{"message":"Already have a profile? ","action_login":"login","action_register":"register"}};
 
 /***/ }),
 
@@ -56745,7 +56786,7 @@ var Welcome = function Welcome() {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = {"tagline":"Your tool of choice to manage your couple goals.","login_c2a":{"message":"Already have a profile? ","action":"login"},"features":{"intro":"What can I use it for?","list":{"feature_one":{"title":"I am feature ONE!","descp":"Blah blah"},"feature_two":{"title":"I am feature two!","descp":"Blah blah"},"feature_three":{"title":"I am feature three!","descp":"Blah blah"}}},"demo":{"title":"Demo title","action":"View"}};
+module.exports = {"tagline":"Your tool of choice to manage your couple goals.","features":{"intro":"What can I use it for?","list":{"feature_one":{"title":"I am feature ONE!","descp":"Blah blah"},"feature_two":{"title":"I am feature two!","descp":"Blah blah"},"feature_three":{"title":"I am feature three!","descp":"Blah blah"}}},"demo":{"title":"Demo title","action":"View"}};
 
 /***/ }),
 
@@ -56774,7 +56815,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lang_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lang_js__WEBPACK_IMPORTED_MODULE_0__);
 
 var locales = {
+  // EN
   'en.welcome': __webpack_require__(/*! ../en/welcome.php */ "./resources/lang/en/welcome.php"),
+  'en.menus': __webpack_require__(/*! ../en/menus.php */ "./resources/lang/en/menus.php"),
+  // FR
   'fr.welcome': __webpack_require__(/*! ../fr/welcome.php */ "./resources/lang/fr/welcome.php")
 };
 /**

@@ -6,6 +6,12 @@ a {
     text-decoration: none;
 }
 
+body {
+    ::-webkit-scrollbar { 
+        display: none; 
+    }
+}
+
 // Standalone rules__________________________________________
 
 // Main app container________________________________________
@@ -21,20 +27,43 @@ a {
 
 // Optional login bar________________________________________
     .login-bar-wrap {
-        height: auto;
+        height: 5px;
         flex: 1;
+        border-bottom: 1px solid;
         display: flex;
         justify-content: flex-end;
         overflow: hidden;
         align-items: center;
         background: #8856d817;
-        color: #9a7979;
+        transition: .5s;
+        color: #8856d817;
         
+        a {
+            color: #8856d817;
+        }
+
+        &.active {
+            color: #9a7979;
+            border: none;
+            height: 25px;
+       
+            a {
+                color: #a77f8a;
+                cursor: pointer;
+                font-weight: 600;
+                &:hover {
+                    color: #604d52;
+                }
+            }
+        }
+        
+
         .action-register {
             flex: 1;
             padding: 0 0 0 5px;
+            
         }
-        
+
         .login-bar {
             display: flex;
             padding: 0 1%;
@@ -49,15 +78,6 @@ a {
 
                 &:first-of-type {
                     padding: 0 5px 0 0;
-                }
-                &.action-login {
-                    font-weight: 600;
-                    a {
-                        color: #a77f8a;
-                        &:hover {
-                            color: #604d52;
-                        }
-                    }
                 }
             }
         }
@@ -112,7 +132,6 @@ a {
 
                             div {
                                 margin: 0 auto 5% auto;
-                                transition: .5s;
                             }
                         }
                     }
@@ -133,6 +152,32 @@ a {
         .content {
             display: flex;
             flex-direction: column;
+            height: 100%;
+            overflow: hidden scroll;
+
+            .tagline-section-wrap {
+                flex: 1;
+                display: flex;
+                height: auto;
+                justify-content: center;
+
+                .tagline-section-left {
+                    flex: 0 1 60%;
+                    display: flex;
+                    align-items: center;
+                    height: 100vh;
+                }
+
+                .tagline-section-right {
+                    background-color: #4531b673;
+                    flex: 0 1 40%;
+                    height: auto;
+                    background-image: url(https://images.unsplash.com/photo-1520179496724-39ca3d310cfc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+                    background-blend-mode: overlay;
+                    background-size: cover;
+                    background-position-y: bottom;
+                }
+            }
         }
     }
 

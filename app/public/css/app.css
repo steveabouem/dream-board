@@ -6,6 +6,10 @@ a {
   text-decoration: none;
 }
 
+body ::-webkit-scrollbar {
+  display: none;
+}
+
 #client {
   position: absolute;
   height: 100%;
@@ -18,14 +22,36 @@ a {
 }
 
 #client .login-bar-wrap {
-  height: auto;
+  height: 5px;
   flex: 1;
+  border-bottom: 1px solid;
   display: flex;
   justify-content: flex-end;
   overflow: hidden;
   align-items: center;
   background: #8856d817;
+  transition: 0.5s;
+  color: #8856d817;
+}
+
+#client .login-bar-wrap a {
+  color: #8856d817;
+}
+
+#client .login-bar-wrap.active {
   color: #9a7979;
+  border: none;
+  height: 25px;
+}
+
+#client .login-bar-wrap.active a {
+  color: #a77f8a;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#client .login-bar-wrap.active a:hover {
+  color: #604d52;
 }
 
 #client .login-bar-wrap .action-register {
@@ -49,18 +75,6 @@ a {
 
 #client .login-bar-wrap .login-bar div:first-of-type {
   padding: 0 5px 0 0;
-}
-
-#client .login-bar-wrap .login-bar div.action-login {
-  font-weight: 600;
-}
-
-#client .login-bar-wrap .login-bar div.action-login a {
-  color: #a77f8a;
-}
-
-#client .login-bar-wrap .login-bar div.action-login a:hover {
-  color: #604d52;
 }
 
 #client .header-wrap {
@@ -114,7 +128,6 @@ a {
 
 #client .header-wrap .header .nav-wrap.topnav .nav-cell:hover div {
   margin: 0 auto 5% auto;
-  transition: 0.5s;
 }
 
 #client .content-wrap {
@@ -127,6 +140,32 @@ a {
 #client .content-wrap .content {
   display: flex;
   flex-direction: column;
+  height: 100%;
+  overflow: hidden scroll;
+}
+
+#client .content-wrap .content .tagline-section-wrap {
+  flex: 1;
+  display: flex;
+  height: auto;
+  justify-content: center;
+}
+
+#client .content-wrap .content .tagline-section-wrap .tagline-section-left {
+  flex: 0 1 60%;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+#client .content-wrap .content .tagline-section-wrap .tagline-section-right {
+  background-color: #4531b673;
+  flex: 0 1 40%;
+  height: auto;
+  background-image: url(https://images.unsplash.com/photo-1520179496724-39ca3d310cfc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position-y: bottom;
 }
 
 #client .app-footer-wrap {
