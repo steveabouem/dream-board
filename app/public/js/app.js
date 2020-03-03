@@ -56753,18 +56753,23 @@ var Welcome = function Welcome() {
     className: "tagline-section-left"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "tagline-title"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, trans('welcome.tagline')))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, trans('welcome.tagline'))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "tagline-paragraph"
+  }, trans('lorem.par3'))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "tagline-section-right"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "tagline-section-wrap"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "tagline-section-left"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "tagline-title"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, trans('welcome.tagline')))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "tagline-section-right"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null))));
+  })));
 };
+
+/***/ }),
+
+/***/ "./resources/lang/en/lorem.php":
+/*!*************************************!*\
+  !*** ./resources/lang/en/lorem.php ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = {"par2":"Spicy jalapeno adipisicing pig flank, nisi pork chop dolor excepteur ad mollit frankfurter pork belly prosciutto ground round. Kielbasa exercitation jerky cupim, biltong ipsum ut. Alcatra leberkas tri-tip, ipsum excepteur dolor consectetur pancetta fugiat. Tri-tip quis salami adipisicing. Magna ut pancetta, t-bone brisket laboris quis boudin nisi ipsum in kevin. Do qui sed tongue cow, irure aute. Laboris chicken frankfurter tri-tip ground round. Cillum aute beef ribs, pastrami fatback consectetur do corned beef enim. Laboris officia andouille frankfurter exercitation. Quis sint elit magna ut, capicola venison cow landjaeger drumstick tail est ribeye. Laborum in leberkas dolor et short ribs do irure tongue pork chop capicola reprehenderit jowl cillum consectetur.","par3":"Spicy jalapeno bacon ipsum dolor amet in esse lorem alcatra. Beef ribs shank porchetta rump eiusmod culpa brisket chislic capicola id. Anim pariatur cillum dolore nostrud. Ut porchetta veniam cupidatat in, pariatur ipsum sausage shoulder turkey.\r\n\r\n    In adipisicing shankle, enim leberkas eiusmod beef ribs landjaeger picanha laborum in eu ipsum shoulder irure. Et sunt ea officia nulla proident. Dolor ut tail turducken fugiat do. Ullamco in minim jowl fugiat beef pork loin tongue do corned beef short loin in ea. Irure tail landjaeger commodo. Deserunt consequat in in tenderloin ullamco turducken dolore officia pork eu.\r\n    \r\n    Does your lorem ipsum text long for something a little meatier? Give our generator a try… it’s tasty!"};
 
 /***/ }),
 
@@ -56818,6 +56823,7 @@ var locales = {
   // EN
   'en.welcome': __webpack_require__(/*! ../en/welcome.php */ "./resources/lang/en/welcome.php"),
   'en.menus': __webpack_require__(/*! ../en/menus.php */ "./resources/lang/en/menus.php"),
+  'en.lorem': __webpack_require__(/*! ../en/lorem.php */ "./resources/lang/en/lorem.php"),
   // FR
   'fr.welcome': __webpack_require__(/*! ../fr/welcome.php */ "./resources/lang/fr/welcome.php")
 };

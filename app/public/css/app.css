@@ -154,8 +154,24 @@ body ::-webkit-scrollbar {
 #client .content-wrap .content .tagline-section-wrap .tagline-section-left {
   flex: 0 1 60%;
   display: flex;
-  align-items: center;
   height: 100vh;
+  justify-content: inherit;
+  flex-direction: column;
+  padding: 0 5%;
+}
+
+#client .content-wrap .content .tagline-section-wrap .tagline-section-left .tagline-title {
+  color: #dbf9f8;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+#client .content-wrap .content .tagline-section-wrap .tagline-section-left .tagline-paragraph {
+  text-align: left;
+  color: #224f5a;
+  padding-top: 5%;
+  width: 80%;
+  word-break: normal;
 }
 
 #client .content-wrap .content .tagline-section-wrap .tagline-section-right {

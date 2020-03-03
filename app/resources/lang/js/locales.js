@@ -4,6 +4,8 @@ export const locales = {
     // EN
     'en.welcome': require('../en/welcome.php'),
     'en.menus': require('../en/menus.php'),
+    'en.lorem': require('../en/lorem.php'),
+    
 
     // FR
     'fr.welcome': require('../fr/welcome.php'),
