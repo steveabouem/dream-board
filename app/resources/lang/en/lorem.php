@@ -6,5 +6,6 @@ return [
 
     In adipisicing shankle, enim leberkas eiusmod beef ribs landjaeger picanha laborum in eu ipsum shoulder irure. Et sunt ea officia nulla proident. Dolor ut tail turducken fugiat do. Ullamco in minim jowl fugiat beef pork loin tongue do corned beef short loin in ea. Irure tail landjaeger commodo. Deserunt consequat in in tenderloin ullamco turducken dolore officia pork eu.
     
-    Does your lorem ipsum text long for something a little meatier? Give our generator a try… it’s tasty!'
+    Does your lorem ipsum text long for something a little meatier? Give our generator a try… it’s tasty!',
+    'corp' => 'Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.'
 ];

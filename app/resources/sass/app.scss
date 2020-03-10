@@ -1,3 +1,5 @@
+// VARS______________________________________________________
+@import '_variables';
 // Common rules______________________________________________
 li {
     list-style-type: none;
@@ -45,7 +47,7 @@ body {
         &.active {
             color: #9a7979;
             border: none;
-            height: 25px;
+            height: 30px;
        
             a {
                 color: #a77f8a;
@@ -145,16 +147,88 @@ body {
     .content-wrap {
         height: 90%;
         top: 0;
-        background: linear-gradient(151deg, #30ac8ead, #0096dad4);
-        color: #0d1224;
+        background: linear-gradient(151deg, #30ac8e4f, #0096dad4);
+        color: $darker-text;
 
-//  Inner sections
+//  Inner sections___________________________________________
         .content {
             display: flex;
             flex-direction: column;
             height: 100%;
             overflow: hidden scroll;
+            
+//  Dashboard page___________________________________________
+            .dashboard-wrap {
+                display: flex;
+                height: 100%;
 
+                .dashboard-left {
+                    flex: 0 1 80%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+
+//  Commitment row___________________________________________
+                    .commitment-wrap {
+                        display: flex;
+
+                        .commitment-thumbnail {
+                            flex: 0 1 20%;
+                            object-fit: contain;
+                        }
+                        .commitment-left {
+                            display: flex;
+                            flex-direction: column;
+                            background: #74d4de54;
+                            margin: 2%;
+                            padding: 1%;
+                            box-shadow: 0 1px 1px 1px #383745;
+
+                            .commitment-title {
+                                color: $dark-text;
+                                border-bottom: 1px solid grey;
+                                height: 20%;
+                                max-height: 20%;
+                                padding: 1% 0;
+                                display: flex;
+
+                                .left {
+                                    flex: 0 1 80%;
+                                }
+
+                                .right {
+                                    flex: 1;
+                                    text-align: right;
+                                }
+                            }
+
+                            .commitment-summary {
+                                max-height: 75%;
+                                color: #0d1224;
+                                /* background: #a1dedd; */
+                                padding: 2%;
+                                
+                            }
+                        }
+                    }
+                }
+
+                .dashboard-sidebar {
+                    flex: 0 1 20%;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: right;
+                    
+                    .dashboard-sidebar-cell {
+                        color: $blue-white;
+                        padding: 10px;
+                        background: white;
+                        flex: 0 1 20%;
+                    }
+                }
+            }
+            
             .tagline-section-wrap {
                 flex: 1;
                 display: flex;
@@ -170,14 +244,14 @@ body {
                     padding: 0 5%;
 
                     .tagline-title {
-                        color: #dbf9f8;
+                        color: $light-title;
                         font-size: 25px;
                         font-weight: 600;
                     }
 
                     .tagline-paragraph {
                         text-align: left;
-                        color: #224f5a;
+                        color: $dark-text;
                         padding-top: 5%;
                         width: 80%;
                         word-break: normal;
@@ -186,7 +260,7 @@ body {
                 }
 
                 .tagline-section-right {
-                    background-color: #4531b673;
+                    background-color: $image-overlay;
                     flex: 0 1 40%;
                     height: auto;
                     background-image: url(https://images.unsplash.com/photo-1520179496724-39ca3d310cfc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
@@ -202,7 +276,7 @@ body {
     .app-footer-wrap {
         height: 10%;
         background: black;
-        color: #cce2ea;
+        color: $light-title;
         display: flex;
 
         div {

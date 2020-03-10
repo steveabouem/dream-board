@@ -41,6 +41,10 @@ export const Content = ({children}) => (
     </div>
 );
 
+export const LongContent = () => (
+    <div/>
+);
+
 export const LoginBar = () => {
     const [active, setActive] = useState(false);
 
