@@ -18,6 +18,14 @@ body {
     font-family: 'Abel', sans-serif!important;
 }
 
+.line {
+    border-bottom: 1px inset;
+    width: 100%;
+    &.red {
+        border-color: red;
+    }
+    
+}
 // Standalone rules__________________________________________
 
 // Main app container________________________________________
@@ -43,6 +51,7 @@ body {
         background: #8856d817;
         transition: .5s;
         color: #8856d817;
+        position: relative;
         
         a {
             color: #8856d817;
@@ -61,8 +70,25 @@ body {
                     color: #604d52;
                 }
             }
+
         }
         
+        .hidden {
+            display: none;
+        }
+
+        .close-login {
+            position: absolute;
+            top: 20%;
+            left: 1%;
+            cursor: pointer;
+
+            svg {
+                &:hover {
+                    color: red;
+                }
+            }
+        }
 
         .action-register {
             flex: 1;
@@ -83,7 +109,7 @@ body {
                 word-break: keep-all;
 
                 &:first-of-type {
-                    padding: 0 5px 0 0;
+                    padding: 0 2px 0 0;
                 }
             }
         }
@@ -276,12 +302,32 @@ body {
                     flex-direction: column;
                     text-align: right;
                     overflow: hidden scroll;
+                    position: relative;
                     
                     .dashboard-sidebar-cell {
                         color: $blue-white;
                         padding: 10px;
                         background: white;
                         flex: 0 1 20%;
+
+                        &.title {
+                            font-weight: 700;
+                        }
+
+                        svg {
+                            font-size: 1em;
+                            color: #a5a5a5;
+                            background: #f4f0fb;
+                            border-radius: 10px;
+                            padding: 1% 1.5%;
+                            transition: 0.3s;
+                            vertical-align: bottom;
+                            
+                            &:hover {
+                                color: #f4f0fb;
+                                background: #a5a5a5;
+                            }
+                        }
                     }
                 }
             }

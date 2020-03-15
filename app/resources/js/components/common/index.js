@@ -67,10 +67,17 @@ export const LongContent = () => (
 );
 
 export const LoginBar = () => {
-    const [active, setActive] = useState(false);
+    const [active, setActive] = useState();
+    const [disabled, disable] = useState();
 
-    return (
-        <div className={'login-bar-wrap' + ( active ? ' active' : '')} onMouseEnter={() => setActive(true)}>
+
+    return disabled ? (
+        <b/>
+    ): (
+        <div className={'login-bar-wrap' + ( active ? ' active' : '') + (disabled ? 'hidden' : '')} onMouseEnter={() => setActive(true)}>
+            <div className="close-login">
+                <Icon icon="times-circle" handleClick={() => {setActive(); disable(true);}}/>
+            </div>
             <div className="login-bar">
                 <div>
                     {trans('menus.login.message')}
@@ -96,8 +103,12 @@ export const LabelledField = ({ label, fieldName, placeholder }) => (
     </React.Fragment>
 );
 
-export const Icon = ({ icon, spin, handleClick }) => (
-    <FontAwesomeIcon icon={icon} spin={spin} onClick={handleClick}/>
+export const Icon = ({ icon, spin, handleClick, color }) => (
+    <FontAwesomeIcon 
+        icon={icon} 
+        spin={spin}
+        onClick={handleClick}
+    />
 );
 
 export const Footer = () => (

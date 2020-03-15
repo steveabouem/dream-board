@@ -15,6 +15,15 @@ body ::-webkit-scrollbar {
   display: none;
 }
 
+.line {
+  border-bottom: 1px inset;
+  width: 100%;
+}
+
+.line.red {
+  border-color: red;
+}
+
 #client {
   position: absolute;
   height: 100%;
@@ -37,6 +46,7 @@ body ::-webkit-scrollbar {
   background: #8856d817;
   transition: 0.5s;
   color: #8856d817;
+  position: relative;
 }
 
 #client .login-bar-wrap a {
@@ -59,6 +69,21 @@ body ::-webkit-scrollbar {
   color: #604d52;
 }
 
+#client .login-bar-wrap .hidden {
+  display: none;
+}
+
+#client .login-bar-wrap .close-login {
+  position: absolute;
+  top: 20%;
+  left: 1%;
+  cursor: pointer;
+}
+
+#client .login-bar-wrap .close-login svg:hover {
+  color: red;
+}
+
 #client .login-bar-wrap .action-register {
   flex: 1;
   padding: 0 0 0 5px;
@@ -79,7 +104,7 @@ body ::-webkit-scrollbar {
 }
 
 #client .login-bar-wrap .login-bar div:first-of-type {
-  padding: 0 5px 0 0;
+  padding: 0 2px 0 0;
 }
 
 #client .header-wrap {
@@ -265,6 +290,7 @@ body ::-webkit-scrollbar {
   flex-direction: column;
   text-align: right;
   overflow: hidden scroll;
+  position: relative;
 }
 
 #client .content-wrap .content .dashboard-wrap .dashboard-sidebar .dashboard-sidebar-cell {
@@ -272,6 +298,25 @@ body ::-webkit-scrollbar {
   padding: 10px;
   background: white;
   flex: 0 1 20%;
+}
+
+#client .content-wrap .content .dashboard-wrap .dashboard-sidebar .dashboard-sidebar-cell.title {
+  font-weight: 700;
+}
+
+#client .content-wrap .content .dashboard-wrap .dashboard-sidebar .dashboard-sidebar-cell svg {
+  font-size: 1em;
+  color: #a5a5a5;
+  background: #f4f0fb;
+  border-radius: 10px;
+  padding: 1% 1.5%;
+  transition: 0.3s;
+  vertical-align: bottom;
+}
+
+#client .content-wrap .content .dashboard-wrap .dashboard-sidebar .dashboard-sidebar-cell svg:hover {
+  color: #f4f0fb;
+  background: #a5a5a5;
 }
 
 #client .content-wrap .content .tagline-section-wrap {

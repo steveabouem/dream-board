@@ -77518,7 +77518,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /*FONT AWESOME ICONS____________________________________________*/
 
-_fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_11__["library"].add(_fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faInfoCircle"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faTimesCircle"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faExclamation"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faEdit"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faThumbsDown"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faBell"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faFolder"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faPlusSquare"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faGlobeAfrica"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faGlobe"]);
+_fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_11__["library"].add(_fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faInfoCircle"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faTimesCircle"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faExclamation"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faEdit"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faThumbsDown"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faBell"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faFolder"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faPlus"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faFolderOpen"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faGlobeAfrica"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faGlobe"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faArchive"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faPlusSquare"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_13__["faTags"]);
 /*______________________________________________________________*/
 
 var Client = function Client() {
@@ -77657,7 +77657,7 @@ function _EMOTION_STRINGIFIED_CSS_ERROR__() { return "You have tried to stringif
 var _ref =  false ? undefined : {
   name: "1pxrpzr-override",
   styles: "margin:20% auto;label:override;",
-  map: "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcQWRtaW5cXERlc2t0b3BcXFdFQiBERVZcXEZSRUVMQU5DRVxcUE9SVEZPTElPXFxEUkVBTV9CT0FSRFxcYXBwXFxyZXNvdXJjZXNcXGpzXFxjb21wb25lbnRzXFxjb21tb25cXGluZGV4LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQVV5QiIsImZpbGUiOiJDOlxcVXNlcnNcXEFkbWluXFxEZXNrdG9wXFxXRUIgREVWXFxGUkVFTEFOQ0VcXFBPUlRGT0xJT1xcRFJFQU1fQk9BUkRcXGFwcFxccmVzb3VyY2VzXFxqc1xcY29tcG9uZW50c1xcY29tbW9uXFxpbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCwge3VzZUVmZmVjdCwgdXNlU3RhdGV9IGZyb20gJ3JlYWN0JztcclxuaW1wb3J0IHsgY3NzIH0gZnJvbSBcIkBlbW90aW9uL2NvcmVcIjtcclxuaW1wb3J0IHsgUmluZ0xvYWRlcn0gZnJvbSAncmVhY3Qtc3Bpbm5lcnMnO1xyXG5pbXBvcnQgeyBOYXZMaW5rIH0gZnJvbSAncmVhY3Qtcm91dGVyLWRvbSc7XHJcbmltcG9ydCB7IGFwcFJvdXRlcyB9IGZyb20gJy4vcm91dGVzJztcclxuaW1wb3J0IHsgRmllbGQgfSBmcm9tICdmb3JtaWsnO1xyXG5pbXBvcnQgeyBGb250QXdlc29tZUljb24gfSBmcm9tICdAZm9ydGF3ZXNvbWUvcmVhY3QtZm9udGF3ZXNvbWUnO1xyXG5pbXBvcnQgTGFuZyBmcm9tICdsYW5nLmpzJztcclxuXHJcbmV4cG9ydCBjb25zdCBMb2FkZXIgPSAoKSA9PiB7XHJcbiAgICBjb25zdCBvdmVycmlkZSA9IGNzcyBgXHJcbiAgICAgICAgbWFyZ2luOiAyMCUgYXV0b1xyXG4gICAgYDtcclxuXHJcbiAgICByZXR1cm4gKFxyXG4gICAgICAgIDxSaW5nTG9hZGVyXHJcbiAgICAgICAgICAgIGNzcz17b3ZlcnJpZGV9XHJcbiAgICAgICAgICAgIGNvbG9yPXsnIzUzNGZhMCd9XHJcbiAgICAgICAgLz5cclxuICAgICk7XHJcbn07XHJcblxyXG5leHBvcnQgY29uc3QgSGVhZGVyID0gKHtjaGlsZHJlbn0pID0+IChcclxuICAgIDxkaXYgY2xhc3NOYW1lPVwiaGVhZGVyLXdyYXBcIj5cclxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImhlYWRlclwiPlxyXG4gICAgICAgICAgICB7Y2hpbGRyZW59XHJcbiAgICAgICAgPC9kaXY+XHJcbiAgICA8L2Rpdj5cclxuKTtcclxuXHJcbmV4cG9ydCBjb25zdCBMYW5ndWFnZVNlbGVjdG9yID0gKCkgPT4ge1xyXG4gICAgY29uc3QgW2lzRXhwYW5kZWQsIGV4cGFuZCBdID0gdXNlU3RhdGUoKTtcclxuXHJcbiAgICByZXR1cm4gKFxyXG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibGFuZ3VhZ2Utc2VsZWN0b3Itd3JhcFwiPlxyXG4gICAgICAgICAgICA8SWNvbiBpY29uPVwiZ2xvYmVcIiBzcGluPXtpc0V4cGFuZGVkID8gdHJ1ZSA6IGZhbHNlfSBoYW5kbGVDbGljaz17KCkgPT4gZXhwYW5kKCFpc0V4cGFuZGVkKX0vPlxyXG4gICAgICAgICAgICA8ZGl2PlxyXG4gICAgICAgICAgICAgICAge2lzRXhwYW5kZWQgJiYgKFxyXG4gICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibGFuZ3VhZ2UtbGlzdFwiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImxhbmd1YWdlLWNob2ljZVwiIG9uQ2xpY2s9eygpID0+IExhbmcuc2V0TG9jYWxlKCdmcicpfT57dHJhbnMoJ21lbnVzLmxhbmcuZnJlbmNoJyl9PC9kaXY+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibGFuZ3VhZ2UtY2hvaWNlXCIgb25DbGljaz17KCkgPT4gTGFuZy5zZXRMb2NhbGUoJ2VuJyl9Pnt0cmFucygnbWVudXMubGFuZy5lbmdsaXNoJyl9PC9kaXY+XHJcbiAgICAgICAgICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgICAgICApfVxyXG4gICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICA8L2Rpdj5cclxuICAgICk7XHJcbn07XHJcblxyXG5leHBvcnQgY29uc3QgQ29udGVudEhlYWRlciA9KHtjaGlsZHJlbn0pID0+IChcclxuICAgIDxkaXYgY2xhc3NOYW1lPVwiY29udGVudC1oZWFkZXItd3JhcFwiPlxyXG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29udGVudC1oZWFkZXJcIj5cclxuICAgICAgICAgICAge2NoaWxkcmVufVxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgPC9kaXY+XHJcbik7XHJcblxyXG5leHBvcnQgY29uc3QgQ29udGVudCA9ICh7Y2hpbGRyZW59KSA9PiAoXHJcbiAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbnRlbnQtd3JhcFwiPlxyXG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29udGVudFwiPlxyXG4gICAgICAgICAgICB7Y2hpbGRyZW59XHJcbiAgICAgICAgPC9kaXY+XHJcbiAgICA8L2Rpdj5cclxuKTtcclxuXHJcbmV4cG9ydCBjb25zdCBMb25nQ29udGVudCA9ICgpID0+IChcclxuICAgIDxkaXYvPlxyXG4pO1xyXG5cclxuZXhwb3J0IGNvbnN0IExvZ2luQmFyID0gKCkgPT4ge1xyXG4gICAgY29uc3QgW2FjdGl2ZSwgc2V0QWN0aXZlXSA9IHVzZVN0YXRlKGZhbHNlKTtcclxuXHJcbiAgICByZXR1cm4gKFxyXG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPXsnbG9naW4tYmFyLXdyYXAnICsgKCBhY3RpdmUgPyAnIGFjdGl2ZScgOiAnJyl9IG9uTW91c2VFbnRlcj17KCkgPT4gc2V0QWN0aXZlKHRydWUpfT5cclxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJsb2dpbi1iYXJcIj5cclxuICAgICAgICAgICAgICAgIDxkaXY+XHJcbiAgICAgICAgICAgICAgICAgICAge3RyYW5zKCdtZW51cy5sb2dpbi5tZXNzYWdlJyl9XHJcbiAgICAgICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYWN0aW9uLWxvZ2luXCI+XHJcbiAgICAgICAgICAgICAgICAgICAgPE5hdkxpbmsgdG89e2FwcFJvdXRlcy5MT0dJTn0+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHt0cmFucygnbWVudXMubG9naW4uYWN0aW9uX2xvZ2luJyl9XHJcbiAgICAgICAgICAgICAgICAgICAgPC9OYXZMaW5rPlxyXG4gICAgICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgKTtcclxufTtcclxuXHJcbi8vIG1pZ2h0IG5lZWQgdG8gcGFzcyBjaGlsZHJlbiBoZXJlIGZvciByZW5kZXJcclxuZXhwb3J0IGNvbnN0IExhYmVsbGVkRmllbGQgPSAoeyBsYWJlbCwgZmllbGROYW1lLCBwbGFjZWhvbGRlciB9KSA9PiAoXHJcbiAgICA8UmVhY3QuRnJhZ21lbnQ+XHJcbiAgICAgICAgPGxhYmVsPntsYWJlbH08L2xhYmVsPlxyXG4gICAgICAgIDxGaWVsZCBcclxuICAgICAgICAgICAgbmFtZT17ZmllbGROYW1lfVxyXG4gICAgICAgICAgICBwbGFjZWhvbGRlcj17cGxhY2Vob2xkZXJ9XHJcbiAgICAgICAgLz5cclxuICAgIDwvUmVhY3QuRnJhZ21lbnQ+XHJcbik7XHJcblxyXG5leHBvcnQgY29uc3QgSWNvbiA9ICh7IGljb24sIHNwaW4sIGhhbmRsZUNsaWNrIH0pID0+IChcclxuICAgIDxGb250QXdlc29tZUljb24gaWNvbj17aWNvbn0gc3Bpbj17c3Bpbn0gb25DbGljaz17aGFuZGxlQ2xpY2t9Lz5cclxuKTtcclxuXHJcbmV4cG9ydCBjb25zdCBGb290ZXIgPSAoKSA9PiAoXHJcbiAgICA8ZGl2IGNsYXNzTmFtZT1cImFwcC1mb290ZXItd3JhcFwiPlxyXG4gICAgICAgIDxkaXY+Y3JlZGVudGlhbCBsZWZ0PC9kaXY+XHJcbiAgICAgICAgPGRpdj5jcmVkZW50aWFsIHJpZ2h0PC9kaXY+XHJcbiAgICA8L2Rpdj5cclxuKTsiXX0= */",
+  map: "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcQWRtaW5cXERlc2t0b3BcXFdFQiBERVZcXEZSRUVMQU5DRVxcUE9SVEZPTElPXFxEUkVBTV9CT0FSRFxcYXBwXFxyZXNvdXJjZXNcXGpzXFxjb21wb25lbnRzXFxjb21tb25cXGluZGV4LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQVV5QiIsImZpbGUiOiJDOlxcVXNlcnNcXEFkbWluXFxEZXNrdG9wXFxXRUIgREVWXFxGUkVFTEFOQ0VcXFBPUlRGT0xJT1xcRFJFQU1fQk9BUkRcXGFwcFxccmVzb3VyY2VzXFxqc1xcY29tcG9uZW50c1xcY29tbW9uXFxpbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCwge3VzZUVmZmVjdCwgdXNlU3RhdGV9IGZyb20gJ3JlYWN0JztcclxuaW1wb3J0IHsgY3NzIH0gZnJvbSBcIkBlbW90aW9uL2NvcmVcIjtcclxuaW1wb3J0IHsgUmluZ0xvYWRlcn0gZnJvbSAncmVhY3Qtc3Bpbm5lcnMnO1xyXG5pbXBvcnQgeyBOYXZMaW5rIH0gZnJvbSAncmVhY3Qtcm91dGVyLWRvbSc7XHJcbmltcG9ydCB7IGFwcFJvdXRlcyB9IGZyb20gJy4vcm91dGVzJztcclxuaW1wb3J0IHsgRmllbGQgfSBmcm9tICdmb3JtaWsnO1xyXG5pbXBvcnQgeyBGb250QXdlc29tZUljb24gfSBmcm9tICdAZm9ydGF3ZXNvbWUvcmVhY3QtZm9udGF3ZXNvbWUnO1xyXG5pbXBvcnQgTGFuZyBmcm9tICdsYW5nLmpzJztcclxuXHJcbmV4cG9ydCBjb25zdCBMb2FkZXIgPSAoKSA9PiB7XHJcbiAgICBjb25zdCBvdmVycmlkZSA9IGNzcyBgXHJcbiAgICAgICAgbWFyZ2luOiAyMCUgYXV0b1xyXG4gICAgYDtcclxuXHJcbiAgICByZXR1cm4gKFxyXG4gICAgICAgIDxSaW5nTG9hZGVyXHJcbiAgICAgICAgICAgIGNzcz17b3ZlcnJpZGV9XHJcbiAgICAgICAgICAgIGNvbG9yPXsnIzUzNGZhMCd9XHJcbiAgICAgICAgLz5cclxuICAgICk7XHJcbn07XHJcblxyXG5leHBvcnQgY29uc3QgSGVhZGVyID0gKHtjaGlsZHJlbn0pID0+IChcclxuICAgIDxkaXYgY2xhc3NOYW1lPVwiaGVhZGVyLXdyYXBcIj5cclxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImhlYWRlclwiPlxyXG4gICAgICAgICAgICB7Y2hpbGRyZW59XHJcbiAgICAgICAgPC9kaXY+XHJcbiAgICA8L2Rpdj5cclxuKTtcclxuXHJcbmV4cG9ydCBjb25zdCBMYW5ndWFnZVNlbGVjdG9yID0gKCkgPT4ge1xyXG4gICAgY29uc3QgW2lzRXhwYW5kZWQsIGV4cGFuZCBdID0gdXNlU3RhdGUoKTtcclxuXHJcbiAgICByZXR1cm4gKFxyXG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibGFuZ3VhZ2Utc2VsZWN0b3Itd3JhcFwiPlxyXG4gICAgICAgICAgICA8SWNvbiBpY29uPVwiZ2xvYmVcIiBzcGluPXtpc0V4cGFuZGVkID8gdHJ1ZSA6IGZhbHNlfSBoYW5kbGVDbGljaz17KCkgPT4gZXhwYW5kKCFpc0V4cGFuZGVkKX0vPlxyXG4gICAgICAgICAgICA8ZGl2PlxyXG4gICAgICAgICAgICAgICAge2lzRXhwYW5kZWQgJiYgKFxyXG4gICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibGFuZ3VhZ2UtbGlzdFwiPlxyXG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImxhbmd1YWdlLWNob2ljZVwiIG9uQ2xpY2s9eygpID0+IExhbmcuc2V0TG9jYWxlKCdmcicpfT57dHJhbnMoJ21lbnVzLmxhbmcuZnJlbmNoJyl9PC9kaXY+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibGFuZ3VhZ2UtY2hvaWNlXCIgb25DbGljaz17KCkgPT4gTGFuZy5zZXRMb2NhbGUoJ2VuJyl9Pnt0cmFucygnbWVudXMubGFuZy5lbmdsaXNoJyl9PC9kaXY+XHJcbiAgICAgICAgICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgICAgICApfVxyXG4gICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICA8L2Rpdj5cclxuICAgICk7XHJcbn07XHJcblxyXG5leHBvcnQgY29uc3QgQ29udGVudEhlYWRlciA9KHtjaGlsZHJlbn0pID0+IChcclxuICAgIDxkaXYgY2xhc3NOYW1lPVwiY29udGVudC1oZWFkZXItd3JhcFwiPlxyXG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29udGVudC1oZWFkZXJcIj5cclxuICAgICAgICAgICAge2NoaWxkcmVufVxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgPC9kaXY+XHJcbik7XHJcblxyXG5leHBvcnQgY29uc3QgQ29udGVudCA9ICh7Y2hpbGRyZW59KSA9PiAoXHJcbiAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbnRlbnQtd3JhcFwiPlxyXG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29udGVudFwiPlxyXG4gICAgICAgICAgICB7Y2hpbGRyZW59XHJcbiAgICAgICAgPC9kaXY+XHJcbiAgICA8L2Rpdj5cclxuKTtcclxuXHJcbmV4cG9ydCBjb25zdCBMb25nQ29udGVudCA9ICgpID0+IChcclxuICAgIDxkaXYvPlxyXG4pO1xyXG5cclxuZXhwb3J0IGNvbnN0IExvZ2luQmFyID0gKCkgPT4ge1xyXG4gICAgY29uc3QgW2FjdGl2ZSwgc2V0QWN0aXZlXSA9IHVzZVN0YXRlKCk7XHJcbiAgICBjb25zdCBbZGlzYWJsZWQsIGRpc2FibGVdID0gdXNlU3RhdGUoKTtcclxuXHJcblxyXG4gICAgcmV0dXJuIGRpc2FibGVkID8gKFxyXG4gICAgICAgIDxiLz5cclxuICAgICk6IChcclxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT17J2xvZ2luLWJhci13cmFwJyArICggYWN0aXZlID8gJyBhY3RpdmUnIDogJycpICsgKGRpc2FibGVkID8gJ2hpZGRlbicgOiAnJyl9IG9uTW91c2VFbnRlcj17KCkgPT4gc2V0QWN0aXZlKHRydWUpfT5cclxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjbG9zZS1sb2dpblwiPlxyXG4gICAgICAgICAgICAgICAgPEljb24gaWNvbj1cInRpbWVzLWNpcmNsZVwiIGhhbmRsZUNsaWNrPXsoKSA9PiB7c2V0QWN0aXZlKCk7IGRpc2FibGUodHJ1ZSk7fX0vPlxyXG4gICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJsb2dpbi1iYXJcIj5cclxuICAgICAgICAgICAgICAgIDxkaXY+XHJcbiAgICAgICAgICAgICAgICAgICAge3RyYW5zKCdtZW51cy5sb2dpbi5tZXNzYWdlJyl9XHJcbiAgICAgICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYWN0aW9uLWxvZ2luXCI+XHJcbiAgICAgICAgICAgICAgICAgICAgPE5hdkxpbmsgdG89e2FwcFJvdXRlcy5MT0dJTn0+XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHt0cmFucygnbWVudXMubG9naW4uYWN0aW9uX2xvZ2luJyl9XHJcbiAgICAgICAgICAgICAgICAgICAgPC9OYXZMaW5rPlxyXG4gICAgICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgKTtcclxufTtcclxuXHJcbi8vIG1pZ2h0IG5lZWQgdG8gcGFzcyBjaGlsZHJlbiBoZXJlIGZvciByZW5kZXJcclxuZXhwb3J0IGNvbnN0IExhYmVsbGVkRmllbGQgPSAoeyBsYWJlbCwgZmllbGROYW1lLCBwbGFjZWhvbGRlciB9KSA9PiAoXHJcbiAgICA8UmVhY3QuRnJhZ21lbnQ+XHJcbiAgICAgICAgPGxhYmVsPntsYWJlbH08L2xhYmVsPlxyXG4gICAgICAgIDxGaWVsZCBcclxuICAgICAgICAgICAgbmFtZT17ZmllbGROYW1lfVxyXG4gICAgICAgICAgICBwbGFjZWhvbGRlcj17cGxhY2Vob2xkZXJ9XHJcbiAgICAgICAgLz5cclxuICAgIDwvUmVhY3QuRnJhZ21lbnQ+XHJcbik7XHJcblxyXG5leHBvcnQgY29uc3QgSWNvbiA9ICh7IGljb24sIHNwaW4sIGhhbmRsZUNsaWNrLCBjb2xvciB9KSA9PiAoXHJcbiAgICA8Rm9udEF3ZXNvbWVJY29uIFxyXG4gICAgICAgIGljb249e2ljb259IFxyXG4gICAgICAgIHNwaW49e3NwaW59XHJcbiAgICAgICAgb25DbGljaz17aGFuZGxlQ2xpY2t9XHJcbiAgICAvPlxyXG4pO1xyXG5cclxuZXhwb3J0IGNvbnN0IEZvb3RlciA9ICgpID0+IChcclxuICAgIDxkaXYgY2xhc3NOYW1lPVwiYXBwLWZvb3Rlci13cmFwXCI+XHJcbiAgICAgICAgPGRpdj5jcmVkZW50aWFsIGxlZnQ8L2Rpdj5cclxuICAgICAgICA8ZGl2PmNyZWRlbnRpYWwgcmlnaHQ8L2Rpdj5cclxuICAgIDwvZGl2PlxyXG4pOyJdfQ== */",
   toString: _EMOTION_STRINGIFIED_CSS_ERROR__
 };
 
@@ -77724,17 +77724,30 @@ var LongContent = function LongContent() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null);
 };
 var LoginBar = function LoginBar() {
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(),
       _useState4 = _slicedToArray(_useState3, 2),
       active = _useState4[0],
       setActive = _useState4[1];
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: 'login-bar-wrap' + (active ? ' active' : ''),
+  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(),
+      _useState6 = _slicedToArray(_useState5, 2),
+      disabled = _useState6[0],
+      disable = _useState6[1];
+
+  return disabled ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: 'login-bar-wrap' + (active ? ' active' : '') + (disabled ? 'hidden' : ''),
     onMouseEnter: function onMouseEnter() {
       return setActive(true);
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "close-login"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Icon, {
+    icon: "times-circle",
+    handleClick: function handleClick() {
+      setActive();
+      disable(true);
+    }
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "login-bar"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, trans('menus.login.message')), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "action-login"
@@ -77755,7 +77768,8 @@ var LabelledField = function LabelledField(_ref5) {
 var Icon = function Icon(_ref6) {
   var icon = _ref6.icon,
       spin = _ref6.spin,
-      handleClick = _ref6.handleClick;
+      handleClick = _ref6.handleClick,
+      color = _ref6.color;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_6__["FontAwesomeIcon"], {
     icon: icon,
     spin: spin,
@@ -77803,52 +77817,54 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../common */ "./resources/js/components/common/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+
 
 
 var Sidebar = function Sidebar() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "dashboard-sidebar"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "dashboard-sidebar-cell title"
+  }, "FOLDERS", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["NavLink"], {
+    to: "folders/new"
+  }, "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_1__["Icon"], {
+    icon: "plus"
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["NavLink"], {
+    to: "new"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "dashboard-sidebar-cell"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_1__["Icon"], {
-    icon: "plus-square"
-  }), "New Commitment"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "New")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["NavLink"], {
+    to: "commitments"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "dashboard-sidebar-cell"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_1__["Icon"], {
-    icon: "folder"
-  }), "Archive"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Archive")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "dashboard-sidebar-cell"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_1__["Icon"], {
-    icon: "folder"
-  }), "Archive"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Archive"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "line"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "dashboard-sidebar-cell title"
+  }, "CATEGORIES", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["NavLink"], {
+    to: "categories/new"
+  }, "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_1__["Icon"], {
+    icon: "plus"
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "dashboard-sidebar-cell"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_1__["Icon"], {
-    icon: "folder"
-  }), "Archive"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Health"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "dashboard-sidebar-cell"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_1__["Icon"], {
-    icon: "folder"
-  }), "Archive"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Travel"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "dashboard-sidebar-cell"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_1__["Icon"], {
-    icon: "folder"
-  }), "Archive"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "career"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "line"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "dashboard-sidebar-cell"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_1__["Icon"], {
-    icon: "folder"
-  }), "Archive"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Archive"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "dashboard-sidebar-cell"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_1__["Icon"], {
-    icon: "folder"
-  }), "Archive"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Archive"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "dashboard-sidebar-cell"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_1__["Icon"], {
-    icon: "folder"
-  }), "Archive"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Archive"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "dashboard-sidebar-cell"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_1__["Icon"], {
-    icon: "folder"
-  }), "Archive"));
+  }, "Archive"));
 };
 
 /***/ }),
@@ -77857,17 +77873,33 @@ var Sidebar = function Sidebar() {
 /*!***************************************************************!*\
   !*** ./resources/js/components/dashboard/commitment/index.js ***!
   \***************************************************************/
-/*! exports provided: Commitment */
+/*! exports provided: CommitmentsView */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Commitment", function() { return Commitment; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CommitmentsView", function() { return CommitmentsView; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../common */ "./resources/js/components/common/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+
+
+
+var CommitmentsView = function CommitmentsView() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "content"
+  }, [1, 2, 3, 4, 5].map(function (commitment, i) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Commitment, {
+      title: "Title"
+    }, trans('lorem.corp'));
+  }));
+};
 
 var Commitment = function Commitment(_ref) {
-  var children = _ref.children;
+  var children = _ref.children,
+      title = _ref.title,
+      id = _ref.id;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "commitment-wrap"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -77878,11 +77910,13 @@ var Commitment = function Commitment(_ref) {
     className: "commitment-title"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "left"
-  }, "Finish this site by noon."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "right"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FontAwesomeIcon, {
-    icon: icon
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["NavLink"], {
+    to: "commitment/:id"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_1__["Icon"], {
+    icon: "folder-open"
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "commitment-summary"
   }, children)));
 };
@@ -77901,9 +77935,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Dashboard", function() { return Dashboard; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
-/* harmony import */ var _Sidebar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Sidebar */ "./resources/js/components/dashboard/Sidebar.js");
-/* harmony import */ var _commitment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./commitment */ "./resources/js/components/dashboard/commitment/index.js");
+/* harmony import */ var _Sidebar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Sidebar */ "./resources/js/components/dashboard/Sidebar.js");
+/* harmony import */ var _commitment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./commitment */ "./resources/js/components/dashboard/commitment/index.js");
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../common */ "./resources/js/components/common/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
@@ -77916,17 +77951,39 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
 var Dashboard = function Dashboard() {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true),
       _useState2 = _slicedToArray(_useState, 2),
       loaded = _useState2[0],
       setLoaded = _useState2[1];
 
-  return !loaded ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Loader, null) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  return !loaded ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_3__["Loader"], null) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["MemoryRouter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "dashboard-wrap"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "dashboard-left"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "[1,2,3,4,5].map((commitment, i) => (", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_commitment__WEBPACK_IMPORTED_MODULE_3__["Commitment"], null, trans('lorem.corp')), "))")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Sidebar__WEBPACK_IMPORTED_MODULE_2__["Sidebar"], null));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Route"], {
+    path: "commitments",
+    render: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_commitment__WEBPACK_IMPORTED_MODULE_2__["CommitmentsView"], null);
+    }
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Route"], {
+    path: "commitments",
+    render: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_commitment__WEBPACK_IMPORTED_MODULE_2__["CommitmentsView"], null);
+    }
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Route"], {
+    path: "stats",
+    render: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_commitment__WEBPACK_IMPORTED_MODULE_2__["CommitmentsView"], null);
+    }
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Route"], {
+    exact: true,
+    path: "/",
+    render: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_commitment__WEBPACK_IMPORTED_MODULE_2__["CommitmentsView"], null);
+    }
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Sidebar__WEBPACK_IMPORTED_MODULE_1__["Sidebar"], null)));
 };
 
 /***/ }),

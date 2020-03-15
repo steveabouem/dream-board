@@ -11,10 +11,17 @@ import Lang from 'lang.js';
 import { locales } from '../lang/js/locales.js';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-import { faInfoCircle, faTimesCircle, faExclamation, faEdit, faThumbsDown, faBell, faFolder, faPlusSquare, faGlobeAfrica, faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { 
+    faInfoCircle, faTimesCircle, faExclamation, faEdit, faThumbsDown, faBell, faFolder,
+     faPlusSquare, faGlobeAfrica, faGlobe, faArchive, faTags, faPlus,
+    faFolderOpen  } from '@fortawesome/free-solid-svg-icons';
 
 /*FONT AWESOME ICONS____________________________________________*/
-library.add(faInfoCircle, faTimesCircle, faExclamation, faEdit, faThumbsDown, faBell, faFolder, faPlusSquare, faGlobeAfrica, faGlobe);
+library.add(
+    faInfoCircle, faTimesCircle, faExclamation, faEdit, faThumbsDown, 
+    faBell, faFolder, faPlus, faFolderOpen, faGlobeAfrica,
+    faGlobe, faArchive, faPlusSquare, faTags
+);
 /*______________________________________________________________*/
 
 export const  Client = () => {
