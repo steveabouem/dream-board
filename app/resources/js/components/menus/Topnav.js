@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { appRoutes } from '../common/routes.js';
+import { LanguageSelector } from '../common/index.js';
 
 export const Topnav = () => {
     return (
@@ -30,6 +31,7 @@ export const Topnav = () => {
                     {trans('menus.topnav.links.profile')}
                 </div>
             </NavLink>
+            <LanguageSelector/>
         </div>
     );
 };

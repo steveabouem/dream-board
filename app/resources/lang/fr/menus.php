@@ -29,6 +29,6 @@ return [
     ],
     'lang' => [
         'french' => 'FR',
-        'english' => 'ANG'
+        'english' => 'EN'
     ]
 ];

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Dashboard } from './components/dashboard';
@@ -11,22 +11,14 @@ import Lang from 'lang.js';
 import { locales } from '../lang/js/locales.js';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-import { faInfoCircle, faTimesCircle, faExclamation, faEdit, faThumbsDown, faBell, faFolder, faPlusSquare } from '@fortawesome/free-solid-svg-icons';
+import { faInfoCircle, faTimesCircle, faExclamation, faEdit, faThumbsDown, faBell, faFolder, faPlusSquare, faGlobeAfrica, faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 /*FONT AWESOME ICONS____________________________________________*/
-library.add(faInfoCircle, faTimesCircle, faExclamation, faEdit, faThumbsDown, faBell, faFolder, faPlusSquare);
+library.add(faInfoCircle, faTimesCircle, faExclamation, faEdit, faThumbsDown, faBell, faFolder, faPlusSquare, faGlobeAfrica, faGlobe);
 /*______________________________________________________________*/
 
 export const  Client = () => {
-    const [loaded, setLoaded] = useState(true);
-    return  !loaded ? (
-        <React.Fragment>
-            <Content>
-                <Loader/>
-            </Content>
-            <Footer/>
-        </React.Fragment>
-    ) : (
+    return (
         <Router>
             <Header>
                 <Topnav/>

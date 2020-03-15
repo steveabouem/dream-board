@@ -5,10 +5,14 @@ export const locales = {
     'en.welcome': require('../en/welcome.php'),
     'en.menus': require('../en/menus.php'),
     'en.lorem': require('../en/lorem.php'),
+    'en.dashboard': require('../en/dashboard.php'),
     
 
     // FR
     'fr.welcome': require('../fr/welcome.php'),
+    'fr.menus': require('../fr/menus.php'),
+    'fr.lorem': require('../fr/lorem.php'),
+    'fr.dashboard': require('../fr/dashboard.php'),
 };
 
 /**

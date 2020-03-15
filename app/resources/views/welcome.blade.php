@@ -9,6 +9,7 @@
         <link href="{{mix('/css/app.css')}}" rel="stylesheet">
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
 
     </head>
     <body>

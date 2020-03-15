@@ -30,6 +30,7 @@
         "@fortawesome/free-brands-svg-icons": "^5.12.1",
         "@fortawesome/free-regular-svg-icons": "^5.12.1",
         "@fortawesome/react-fontawesome": "^0.1.9",
+        "formik": "^2.1.4",
         "lang.js": "^1.1.14",
         "react-dom": "^16.12.0",
         "react-fontawesome": "^1.7.1",
