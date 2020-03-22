@@ -11,15 +11,15 @@ import Lang from 'lang.js';
 import { locales } from '../lang/js/locales.js';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
+/*FONT AWESOME ICONS____________________________________________*/
 import { 
     faInfoCircle, faTimesCircle, faExclamation, faEdit, faThumbsDown, faBell, faFolder,
      faPlusSquare, faGlobeAfrica, faGlobe, faArchive, faTags, faPlus,
-    faFolderOpen  } from '@fortawesome/free-solid-svg-icons';
+    faFolderOpen, faSearch, faAddressCard, faHome  } from '@fortawesome/free-solid-svg-icons';
 
-/*FONT AWESOME ICONS____________________________________________*/
 library.add(
     faInfoCircle, faTimesCircle, faExclamation, faEdit, faThumbsDown, 
-    faBell, faFolder, faPlus, faFolderOpen, faGlobeAfrica,
+    faBell, faFolder, faPlus, faFolderOpen, faSearch, faAddressCard, faHome, faGlobeAfrica,
     faGlobe, faArchive, faPlusSquare, faTags
 );
 /*______________________________________________________________*/

@@ -2,36 +2,34 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { appRoutes } from '../common/routes.js';
 import { LanguageSelector } from '../common/index.js';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const Topnav = () => {
     return (
         <div className="nav-wrap topnav">
-             <div className="nav-cell logo">
+            <NavLink to={appRoutes.HOME} exact className="nav-cell icon" activeClassName="active">
+                {/* {trans('menus.topnav.links.home')} */}
+                <FontAwesomeIcon icon="home"/>
+            </NavLink>
+            <LanguageSelector/>
+            <NavLink className="nav-cell icon" activeClassName="active" to={appRoutes.PROFILE}>
                 <div>
-                   
-                </div>
-            </div>
-            <NavLink to={appRoutes.HOME} exact className="nav-cell" activeClassName="active">
-                <div>
-                    {trans('menus.topnav.links.home')}
+                    {/* {trans('menus.topnav.links.profile')} */}
+                    <FontAwesomeIcon icon="address-card"/>
                 </div>
             </NavLink>
+            <div className="nav-cell logo">
+            </div>
+            <div className="nav-cell">
+                {/* {trans('menus.topnav.links.categories')} */}
+                <input placeholder="lookup"/>
+                <FontAwesomeIcon icon="search" className="top-search-icon"/>
+            </div>
             <NavLink className="nav-cell" activeClassName="active" to={appRoutes.DASHBOARD}>
                 <div>
                     {trans('menus.topnav.links.dashboard')}
                 </div>
             </NavLink>
-            <NavLink to={appRoutes.CATEGORIES} className="nav-cell" activeClassName="active">
-                <div>
-                    {trans('menus.topnav.links.categories')}
-                </div>
-            </NavLink>
-            <NavLink className="nav-cell" activeClassName="active" to={appRoutes.PROFILE}>
-                <div>
-                    {trans('menus.topnav.links.profile')}
-                </div>
-            </NavLink>
-            <LanguageSelector/>
         </div>
     );
 };

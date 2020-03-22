@@ -33,14 +33,16 @@ export const LanguageSelector = () => {
 
     return (
         <div className="language-selector-wrap">
-            <Icon icon="globe" spin={isExpanded ? true : false} handleClick={() => expand(!isExpanded)}/>
-            <div>
-                {isExpanded && (
-                    <div className="language-list">
-                        <div className="language-choice" onClick={() => Lang.setLocale('fr')}>{trans('menus.lang.french')}</div>
-                        <div className="language-choice" onClick={() => Lang.setLocale('en')}>{trans('menus.lang.english')}</div>
-                    </div>
-                )}
+            <div className="nav-cell icon">
+                <Icon icon="globe" spin={isExpanded ? true : false} handleClick={() => expand(!isExpanded)}/>
+                <div>
+                    {isExpanded && (
+                        <div className="language-list">
+                            <div className="language-choice" onClick={() => Lang.setLocale('fr')}>{trans('menus.lang.french')}</div>
+                            <div className="language-choice" onClick={() => Lang.setLocale('en')}>{trans('menus.lang.english')}</div>
+                        </div>
+                    )}
+                </div>
             </div>
         </div>
     );
