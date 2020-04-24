@@ -22,7 +22,7 @@ export const Topnav = () => {
             </div>
             <div className="nav-cell">
                 {/* {trans('menus.topnav.links.categories')} */}
-                <input placeholder="lookup"/>
+                <input/>
                 <FontAwesomeIcon icon="search" className="top-search-icon"/>
             </div>
             <NavLink className="nav-cell" activeClassName="active" to={appRoutes.DASHBOARD}>

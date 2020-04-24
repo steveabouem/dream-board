@@ -1,11 +1,12 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState, useContext} from 'react';
 import { css } from "@emotion/core";
 import { RingLoader} from 'react-spinners';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { appRoutes } from './routes';
 import { Field } from 'formik';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Lang from 'lang.js';
+import { UserContext } from '../contexts';
 
 export const Loader = () => {
     const override = css `
@@ -38,8 +39,12 @@ export const LanguageSelector = () => {
                 <div>
                     {isExpanded && (
                         <div className="language-list">
-                            <div className="language-choice" onClick={() => Lang.setLocale('fr')}>{trans('menus.lang.french')}</div>
-                            <div className="language-choice" onClick={() => Lang.setLocale('en')}>{trans('menus.lang.english')}</div>
+                            <div className="language-choice" onClick={() => {
+                                Lang.setLocale('fr'); expand()
+                            }}>{trans('menus.lang.french')}</div>
+                            <div className="language-choice" onClick={() => {
+                                Lang.setLocale('en'); expand()
+                            }}>{trans('menus.lang.english')}</div>
                         </div>
                     )}
                 </div>
@@ -69,16 +74,17 @@ export const LongContent = () => (
 );
 
 export const LoginBar = () => {
+    const {allowLoginBar, lockLoginBar} = useContext(UserContext);
     const [active, setActive] = useState();
-    const [disabled, disable] = useState();
 
+    let {pathname} = useLocation();
 
-    return disabled ? (
+    return pathname === appRoutes.LOGIN || !allowLoginBar ? (
         <b/>
-    ): (
-        <div className={'login-bar-wrap' + ( active ? ' active' : '') + (disabled ? 'hidden' : '')} onMouseEnter={() => setActive(true)}>
+    ) : (
+        <div className={'login-bar-wrap' + ( active ? ' active' : '')} onMouseEnter={() => setActive(true)}>
             <div className="close-login">
-                <Icon icon="times-circle" handleClick={() => {setActive(); disable(true);}}/>
+                <Icon icon="times-circle" handleClick={() => {setActive(); lockLoginBar();}}/>
             </div>
             <div className="login-bar">
                 <div>
@@ -105,7 +111,7 @@ export const LabelledField = ({ label, fieldName, placeholder }) => (
     </React.Fragment>
 );
 
-export const Icon = ({ icon, spin, handleClick, color }) => (
+export const Icon = ({ icon, spin, handleClick }) => (
     <FontAwesomeIcon 
         icon={icon} 
         spin={spin}

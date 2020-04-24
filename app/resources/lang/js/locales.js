@@ -6,6 +6,7 @@ export const locales = {
     'en.menus': require('../en/menus.php'),
     'en.lorem': require('../en/lorem.php'),
     'en.dashboard': require('../en/dashboard.php'),
+    'en.auth': require('../en/auth.php'),
     
 
     // FR
@@ -13,6 +14,7 @@ export const locales = {
     'fr.menus': require('../fr/menus.php'),
     'fr.lorem': require('../fr/lorem.php'),
     'fr.dashboard': require('../fr/dashboard.php'),
+    'fr.auth': require('../fr/auth.php'),
 };
 
 /**

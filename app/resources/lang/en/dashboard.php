@@ -1,9 +1,9 @@
 <?php
     return [
-        'commitment' => [
-            'labels' => [
-                'name' => 'Name',
-                'details' => 'Details',
+        "commitment" => [
+            "labels" => [
+                "name" => "Name",
+                "details" => "Details",
 
             ]
         ]
