@@ -175,6 +175,10 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*
+        * JS Localization Provider...
+        */
+        Mariuzzo\LaravelJsLocalization\LaravelJsLocalizationServiceProvider::class
     ],
 
     /*

@@ -5,13 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Dream Board</title>
-
+        <!-- Styles -->
+        <link href="{{mix('/css/app.css')}}" rel="stylesheet">
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
 
     </head>
     <body>
         <div id="client"></div>
-        <script src="../js/app.jsx" type="text/javascript"></script>
+        <script src="{{mix('/js/app.js')}}"></script>
     </body>
 </html>

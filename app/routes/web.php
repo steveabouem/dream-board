@@ -4,13 +4,14 @@
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
+|Will be used for my API endpoints. Routing will be handled in React
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get( '/{path?}', function(){
+    return view( 'welcome' );
+} )->where('path', '.*');
+
+Route::post('users/register', 'App\Http\Controllers\User\UserController@register');
+Route::post('users/login', 'App\Http\Controllers\User\UserController@login');
+Auth::routes();

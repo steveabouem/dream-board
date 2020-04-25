@@ -11,5 +11,16 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.react('resources/js/app.jsx', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+mix.react('./resources/js/app.js', 'public/js');
+mix.webpackConfig({
+    module: {
+      rules: [
+        {
+          // Matches all PHP or JSON files in `resources/lang` directory.
+          test: /resources[\\\/]lang.+\.(php|json)$/,
+          loader: 'laravel-localization-loader',
+        }
+      ]
+    }
+});
+mix.sass('./resources/sass/app.scss', 'public/css');
