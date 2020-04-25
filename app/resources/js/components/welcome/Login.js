@@ -21,7 +21,7 @@ export const LoginPage = () => {
     };
 
     const loginValidations = Yup.object().shape({
-        userName: Yup.string().required(),
+        name: Yup.string().required(),
         password: Yup.string().required(),
         conf_password: isLogingIn ? Yup.string() : Yup.string().required(),
         email: Yup.string().email().required(), 
@@ -31,7 +31,7 @@ export const LoginPage = () => {
         <Formik
             onSubmit={(values, actions) => submit(values, actions)}
             initialValues={{
-                userName: '',
+                name: '',
                 password: '', //password,
                 conf_password: '',
                 email: '', //find a way to hash
@@ -39,20 +39,22 @@ export const LoginPage = () => {
             }}
             validationSchema={loginValidations}
         >
-            {({ touched, errors, values, submitForm, isValid, isSubmitting }) => (
+            {({ touched, errors, values, submitForm, isValid, isSubmitting, resetForm }) => (
                 <div className="overlay-form center">
                     <div className="overlay-form-inner">
                         <div className="form-title">
                             <span className="left">{trans('auth.form.login_title')}</span>
-                            <span className="right">
+                            <span className="right">(
                                 {trans(`auth.form.${isLogingIn ? 'register' : 'login'}.goto`)}
-                                <span className="pointer" onClick={() => setProcess(isLogingIn ? 2 : 1)}>{trans('auth.links.here')}</span>
-                            </span>
+                                <span className="pointer" onClick={() => {
+                                    resetForm(); setProcess(isLogingIn ? 2 : 1);
+                                }}>{trans('auth.links.here')}</span>
+                            )</span>
                         </div>
                         <ul>
                             <li className={'form-field-wrap ' + (errors.email && touched.email ? ' error' : '')}>
                                 <label>{trans('auth.form.username')}</label>
-                                <Field name="userName" className={'form-field' + (errors.userName && touched.userName ? ' error' : '')}/>
+                                <Field name="name" className={'form-field' + (errors.name && touched.name ? ' error' : '')}/>
                             </li>
                             <li>
                                 <label>{trans('auth.form.email')}</label>

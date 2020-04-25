@@ -84681,7 +84681,7 @@ var LoginPage = function LoginPage() {
   };
 
   var loginValidations = yup__WEBPACK_IMPORTED_MODULE_4__["object"]().shape({
-    userName: yup__WEBPACK_IMPORTED_MODULE_4__["string"]().required(),
+    name: yup__WEBPACK_IMPORTED_MODULE_4__["string"]().required(),
     password: yup__WEBPACK_IMPORTED_MODULE_4__["string"]().required(),
     conf_password: isLogingIn ? yup__WEBPACK_IMPORTED_MODULE_4__["string"]() : yup__WEBPACK_IMPORTED_MODULE_4__["string"]().required(),
     email: yup__WEBPACK_IMPORTED_MODULE_4__["string"]().email().required()
@@ -84691,7 +84691,7 @@ var LoginPage = function LoginPage() {
         return submit(values, actions);
       },
       initialValues: {
-        userName: '',
+        name: '',
         password: '',
         //password,
         conf_password: '',
@@ -84706,7 +84706,8 @@ var LoginPage = function LoginPage() {
           values = _ref.values,
           submitForm = _ref.submitForm,
           isValid = _ref.isValid,
-          isSubmitting = _ref.isSubmitting;
+          isSubmitting = _ref.isSubmitting,
+          resetForm = _ref.resetForm;
       return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "overlay-form center"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -84717,16 +84718,17 @@ var LoginPage = function LoginPage() {
           className: "left"
         }, trans('auth.form.login_title')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
           className: "right"
-        }, trans("auth.form.".concat(isLogingIn ? 'register' : 'login', ".goto")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        }, "(", trans("auth.form.".concat(isLogingIn ? 'register' : 'login', ".goto")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
           className: "pointer",
           onClick: function onClick() {
-            return setProcess(isLogingIn ? 2 : 1);
+            resetForm();
+            setProcess(isLogingIn ? 2 : 1);
           }
-        }, trans('auth.links.here')))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        }, trans('auth.links.here')), ")")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
           className: 'form-field-wrap ' + (errors.email && touched.email ? ' error' : '')
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, trans('auth.form.username')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(formik__WEBPACK_IMPORTED_MODULE_2__["Field"], {
-          name: "userName",
-          className: 'form-field' + (errors.userName && touched.userName ? ' error' : '')
+          name: "name",
+          className: 'form-field' + (errors.name && touched.name ? ' error' : '')
         })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, trans('auth.form.email')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(formik__WEBPACK_IMPORTED_MODULE_2__["Field"], {
           name: "email",
           className: 'form-field' + (errors.email && touched.email ? ' error' : '')
@@ -84790,7 +84792,7 @@ var Welcome = function Welcome() {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = {"form":{"login_title":"Login","username":"Username","email":"Email","password":"Password","confirm":"Confirm password","google":"Google login","failed":"These credentials do not match our records.","throttle":"Too many login attempts. Please try again in seconds seconds.","register":{"goto":"New here? Go ahead and create your profile ","failed_existing":"This username is already in use. Please try again."},"login":{"goto":"Already a member? Go ahead and login ","failed_no_match":"The information provided is not matching any of our records. Please create your own profile."}},"links":{"here":"here"}};
+module.exports = {"form":{"login_title":"Login","username":"Username","email":"Email","password":"Password","confirm":"Confirm password","google":"Google login","failed":"These credentials do not match our records.","throttle":"Too many login attempts. Please try again in seconds seconds.","register":{"goto":"New user? Register ","failed_existing":"This username is already in use. Please try again."},"login":{"goto":"Already a member? Login ","failed_no_match":"The information provided is not matching any of our records. Please create your own profile."}},"links":{"here":"here"}};
 
 /***/ }),
 
@@ -84845,7 +84847,7 @@ module.exports = {"tagline":"Your tool of choice to manage your couple goals.","
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = {"form":{"login_title":"Connection","register":{"goto":"Nouvel utilisateur? Crééz votre profil ","welcome_name":"Bienvenue :name!","failed_existing":"Ce nom d'utilisateur existe déjà. Veuillez en choisir un nouveau."},"username":"nom d'utilisateur","email":"Email","password":"Mot de passe","confirm":"Confirmer le mote de passe","google":"Google","failed":"Les informations fournies ne correspondent pas à ce profil.","throttle":"Too many login attempts. Please try again in :seconds seconds.","login":{"goto":"Déjà membre? Connectez-vous ","success_name":"Salut :name","failed_no_match":"Ces informations n'existent pas dans notre répertoire. Veuillez créer votre profil."}},"links":{"here":"ici"}};
+module.exports = {"form":{"login_title":"Connection","register":{"goto":"Nouvel utilisateur? Enregistrez-vous ","welcome_name":"Bienvenue :name!","failed_existing":"Ce nom d'utilisateur existe déjà. Veuillez en choisir un nouveau."},"username":"nom d'utilisateur","email":"Email","password":"Mot de passe","confirm":"Confirmer le mote de passe","google":"Google","failed":"Les informations fournies ne correspondent pas à ce profil.","throttle":"Too many login attempts. Please try again in :seconds seconds.","login":{"goto":"Déjà membre? Connectez-vous ","success_name":"Salut :name","failed_no_match":"Ces informations n'existent pas dans notre répertoire. Veuillez créer votre profil."}},"links":{"here":"ici"}};
 
 /***/ }),
 

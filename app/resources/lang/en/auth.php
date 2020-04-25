@@ -22,11 +22,11 @@ return [
         "failed" => "These credentials do not match our records.",
         "throttle" => "Too many login attempts. Please try again in seconds seconds.",
         "register" => [
-            "goto" => "New here? Go ahead and create your profile ",
+            "goto" => "New user? Register ",
             "failed_existing" => "This username is already in use. Please try again."
         ],
         "login" => [
-            "goto" => "Already a member? Go ahead and login ",
+            "goto" => "Already a member? Login ",
             "failed_no_match" => "The information provided is not matching any of our records. Please create your own profile."
         ]    
     ],
