@@ -32,9 +32,9 @@ export const LoginPage = () => {
             onSubmit={(values, actions) => submit(values, actions)}
             initialValues={{
                 name: '',
-                password: '', //password,
+                password: '',
                 conf_password: '',
-                email: '', //find a way to hash
+                email: '',
                 profileImageUrl: '',
             }}
             validationSchema={loginValidations}
