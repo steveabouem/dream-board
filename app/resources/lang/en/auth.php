@@ -14,6 +14,7 @@
 return [
     "form" => [
         "login_title" => "Login",
+        "register_title" => "Register",
         "username" => "Username",
         "email" => "Email",
         "password" => "Password",

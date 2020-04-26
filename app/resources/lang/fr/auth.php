@@ -14,7 +14,7 @@
 return [
     "form" => [
         "login_title" => "Connection",
-        "register" => "Enregistrement",
+        "register_title" => "Enregistrement",
         "username" => "nom d'utilisateur",
         "email" => "Email",
         "password" => "Mot de passe",

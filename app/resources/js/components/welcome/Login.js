@@ -12,11 +12,30 @@ export const LoginPage = () => {
     const isLogingIn = process === 1;
 
     const submit = (values, actions) => {
-        if (process === 1) {
-            requestLogin(values);
-
-        } else {
-            requestRegistry(values);
+        
+        if ( values.password === values.c_password) {
+            actions.setSubmitting(true);
+            if (process === 1) {
+                requestLogin(values)
+                .then(({data}) => {
+                    console.log(({data}));
+                    
+                })
+                .catch((e) => {
+                    console.log('login error', e);
+                    actions.setSubmitting(false);
+                });
+    
+            } else {
+                requestRegistry(values)
+                .then(({data}) => {
+                    console.log(({data}));
+                    actions.setSubmitting(false);
+                })
+                .catch((e) => {
+                    console.log('reg error', e);
+                });
+            }
         }
     };
 
@@ -43,7 +62,7 @@ export const LoginPage = () => {
                 <div className="overlay-form center">
                     <div className="overlay-form-inner">
                         <div className="form-title">
-                            <span className="left">{trans('auth.form.login_title')}</span>
+                            <span className="left">{trans(`auth.form.${!isLogingIn ? 'register_title' : 'login_title'}`)}</span>
                             <span className="right">(
                                 {trans(`auth.form.${isLogingIn ? 'register' : 'login'}.goto`)}
                                 <span className="pointer" onClick={() => {
