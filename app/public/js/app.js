@@ -84693,10 +84693,8 @@ var LoginPage = function LoginPage() {
       initialValues: {
         name: '',
         password: '',
-        //password,
         conf_password: '',
         email: '',
-        //find a way to hash
         profileImageUrl: ''
       },
       validationSchema: loginValidations
