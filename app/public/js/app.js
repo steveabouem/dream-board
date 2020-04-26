@@ -84673,15 +84673,35 @@ var LoginPage = function LoginPage() {
   var isLogingIn = process === 1;
 
   var submit = function submit(values, actions) {
-    if (process === 1) {
-      Object(_api__WEBPACK_IMPORTED_MODULE_5__["requestLogin"])(values);
-    } else {
-      Object(_api__WEBPACK_IMPORTED_MODULE_5__["requestRegistry"])(values);
+    if (values.password === values.c_password) {
+      actions.setSubmitting(true);
+
+      if (process === 1) {
+        Object(_api__WEBPACK_IMPORTED_MODULE_5__["requestLogin"])(values).then(function (_ref) {
+          var data = _ref.data;
+          console.log({
+            data: data
+          });
+        })["catch"](function (e) {
+          console.log('login error', e);
+          actions.setSubmitting(false);
+        });
+      } else {
+        Object(_api__WEBPACK_IMPORTED_MODULE_5__["requestRegistry"])(values).then(function (_ref2) {
+          var data = _ref2.data;
+          console.log({
+            data: data
+          });
+          actions.setSubmitting(false);
+        })["catch"](function (e) {
+          console.log('reg error', e);
+        });
+      }
     }
   };
 
   var loginValidations = yup__WEBPACK_IMPORTED_MODULE_4__["object"]().shape({
-    userName: yup__WEBPACK_IMPORTED_MODULE_4__["string"]().required(),
+    name: yup__WEBPACK_IMPORTED_MODULE_4__["string"]().required(),
     password: yup__WEBPACK_IMPORTED_MODULE_4__["string"]().required(),
     conf_password: isLogingIn ? yup__WEBPACK_IMPORTED_MODULE_4__["string"]() : yup__WEBPACK_IMPORTED_MODULE_4__["string"]().required(),
     email: yup__WEBPACK_IMPORTED_MODULE_4__["string"]().email().required()
@@ -84691,22 +84711,21 @@ var LoginPage = function LoginPage() {
         return submit(values, actions);
       },
       initialValues: {
-        userName: '',
+        name: '',
         password: '',
-        //password,
         conf_password: '',
         email: '',
-        //find a way to hash
         profileImageUrl: ''
       },
       validationSchema: loginValidations
-    }, function (_ref) {
-      var touched = _ref.touched,
-          errors = _ref.errors,
-          values = _ref.values,
-          submitForm = _ref.submitForm,
-          isValid = _ref.isValid,
-          isSubmitting = _ref.isSubmitting;
+    }, function (_ref3) {
+      var touched = _ref3.touched,
+          errors = _ref3.errors,
+          values = _ref3.values,
+          submitForm = _ref3.submitForm,
+          isValid = _ref3.isValid,
+          isSubmitting = _ref3.isSubmitting,
+          resetForm = _ref3.resetForm;
       return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "overlay-form center"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -84715,18 +84734,19 @@ var LoginPage = function LoginPage() {
           className: "form-title"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
           className: "left"
-        }, trans('auth.form.login_title')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        }, trans("auth.form.".concat(!isLogingIn ? 'register_title' : 'login_title'))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
           className: "right"
-        }, trans("auth.form.".concat(isLogingIn ? 'register' : 'login', ".goto")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        }, "(", trans("auth.form.".concat(isLogingIn ? 'register' : 'login', ".goto")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
           className: "pointer",
           onClick: function onClick() {
-            return setProcess(isLogingIn ? 2 : 1);
+            resetForm();
+            setProcess(isLogingIn ? 2 : 1);
           }
-        }, trans('auth.links.here')))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        }, trans('auth.links.here')), ")")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
           className: 'form-field-wrap ' + (errors.email && touched.email ? ' error' : '')
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, trans('auth.form.username')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(formik__WEBPACK_IMPORTED_MODULE_2__["Field"], {
-          name: "userName",
-          className: 'form-field' + (errors.userName && touched.userName ? ' error' : '')
+          name: "name",
+          className: 'form-field' + (errors.name && touched.name ? ' error' : '')
         })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, trans('auth.form.email')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(formik__WEBPACK_IMPORTED_MODULE_2__["Field"], {
           name: "email",
           className: 'form-field' + (errors.email && touched.email ? ' error' : '')
@@ -84790,7 +84810,7 @@ var Welcome = function Welcome() {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = {"form":{"login_title":"Login","username":"Username","email":"Email","password":"Password","confirm":"Confirm password","google":"Google login","failed":"These credentials do not match our records.","throttle":"Too many login attempts. Please try again in seconds seconds.","register":{"goto":"New here? Go ahead and create your profile ","failed_existing":"This username is already in use. Please try again."},"login":{"goto":"Already a member? Go ahead and login ","failed_no_match":"The information provided is not matching any of our records. Please create your own profile."}},"links":{"here":"here"}};
+module.exports = {"form":{"login_title":"Login","register_title":"Register","username":"Username","email":"Email","password":"Password","confirm":"Confirm password","google":"Google login","failed":"These credentials do not match our records.","throttle":"Too many login attempts. Please try again in seconds seconds.","register":{"goto":"New user? Register ","failed_existing":"This username is already in use. Please try again."},"login":{"goto":"Already a member? Login ","failed_no_match":"The information provided is not matching any of our records. Please create your own profile."}},"links":{"here":"here"}};
 
 /***/ }),
 
@@ -84845,7 +84865,7 @@ module.exports = {"tagline":"Your tool of choice to manage your couple goals.","
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = {"form":{"login_title":"Connection","register":{"goto":"Nouvel utilisateur? Crééz votre profil ","welcome_name":"Bienvenue :name!","failed_existing":"Ce nom d'utilisateur existe déjà. Veuillez en choisir un nouveau."},"username":"nom d'utilisateur","email":"Email","password":"Mot de passe","confirm":"Confirmer le mote de passe","google":"Google","failed":"Les informations fournies ne correspondent pas à ce profil.","throttle":"Too many login attempts. Please try again in :seconds seconds.","login":{"goto":"Déjà membre? Connectez-vous ","success_name":"Salut :name","failed_no_match":"Ces informations n'existent pas dans notre répertoire. Veuillez créer votre profil."}},"links":{"here":"ici"}};
+module.exports = {"form":{"login_title":"Connection","register_title":"Enregistrement","username":"nom d'utilisateur","email":"Email","password":"Mot de passe","confirm":"Confirmer le mote de passe","google":"Google","failed":"Les informations fournies ne correspondent pas à ce profil.","throttle":"Too many login attempts. Please try again in :seconds seconds.","register":{"goto":"Nouvel utilisateur? Enregistrez-vous ","welcome_name":"Bienvenue :name!","failed_existing":"Ce nom d'utilisateur existe déjà. Veuillez en choisir un nouveau."},"login":{"goto":"Déjà membre? Connectez-vous ","success_name":"Salut :name","failed_no_match":"Ces informations n'existent pas dans notre répertoire. Veuillez créer votre profil."}},"links":{"here":"ici"}};
 
 /***/ }),
 

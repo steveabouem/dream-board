@@ -14,7 +14,7 @@
 return [
     "form" => [
         "login_title" => "Connection",
-        "register" => "Enregistrement",
+        "register_title" => "Enregistrement",
         "username" => "nom d'utilisateur",
         "email" => "Email",
         "password" => "Mot de passe",
@@ -23,7 +23,7 @@ return [
         "failed" => "Les informations fournies ne correspondent pas à ce profil.",
         "throttle" => "Too many login attempts. Please try again in :seconds seconds.",
         "register" => [
-            "goto" => "Nouvel utilisateur? Crééz votre profil ",
+            "goto" => "Nouvel utilisateur? Enregistrez-vous ",
             "welcome_name" => "Bienvenue :name!",
             "failed_existing" => "Ce nom d'utilisateur existe déjà. Veuillez en choisir un nouveau."
         ],

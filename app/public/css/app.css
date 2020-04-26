@@ -50,7 +50,7 @@ body ::-webkit-scrollbar {
 
 .overlay-form.center {
   width: 40%;
-  height: 65%;
+  height: 70%;
   top: 20%;
   left: 30%;
   overflow: hidden;
@@ -64,17 +64,28 @@ body ::-webkit-scrollbar {
   overflow: scroll;
 }
 
-.overlay-form .overlay-form-inner div {
+.overlay-form .overlay-form-inner .form-title {
   text-align: center;
   position: absolute;
   width: 100%;
-  height: 10%;
+  display: flex;
+  flex-direction: column;
   top: 0;
   padding: 2px;
+  height: 15%;
 }
 
-.overlay-form .overlay-form-inner div.form-title {
-  font-size: 1.4em;
+.overlay-form .overlay-form-inner .form-title .left {
+  font-weight: 600;
+}
+
+.overlay-form .overlay-form-inner .form-title .right .pointer {
+  color: white;
+  font-weight: 600;
+}
+
+.overlay-form .overlay-form-inner .form-title .right .pointer:hover {
+  color: #7640cd;
 }
 
 .overlay-form .overlay-form-inner ul {
@@ -85,7 +96,7 @@ body ::-webkit-scrollbar {
   height: auto;
   justify-content: center;
   border: 1px solid rgba(255, 255, 255, 0.496);
-  top: 5%;
+  top: 15%;
   left: 10%;
   list-style: none;
   padding: 5% 0;
