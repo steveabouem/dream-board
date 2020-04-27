@@ -84697,6 +84697,8 @@ var LoginPage = function LoginPage() {
         console.log('reg error', e);
       });
     }
+
+    actions.resetForm();
   };
 
   var loginValidations = yup__WEBPACK_IMPORTED_MODULE_4__["object"]().shape({

@@ -31,11 +31,13 @@ export const LoginPage = () => {
             .then(({data}) => {
                 console.log({data});
                 actions.setSubmitting(false);
+                
             })
             .catch((e) => {
                 console.log('reg error', e);
             });
         }
+        actions.resetForm();
     };
 
     const loginValidations = Yup.object().shape({

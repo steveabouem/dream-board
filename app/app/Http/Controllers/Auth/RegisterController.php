@@ -62,25 +62,23 @@ class RegisterController extends Controller
      * Create a new user instance after a valid registration.
      *
      * @param  array  $data
-     * @return \App\User
+     * @return App\User
      */
     protected function create(Request $request)
     {
         $user = User::where('email', $request->email)->first();
         
-        try {
             if (is_null($user)) {
-               $user =  User::create([
-                    'name' => $request->userName,
+               User::create([
+                    'name' => $request->name,
                     'email' => $request->email,
                     'password' => Hash::make($request->password),
                 ]);
+                
+                return 'Done';
             } else {
                 return response(['message' => __('auth.register.failed_existing')], 400);
             }
-            return $user;
-        } catch(\Exception $e) {
-            var_dump($e);
-        }
+
     }
 }
