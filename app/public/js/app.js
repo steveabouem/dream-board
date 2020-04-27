@@ -84673,37 +84673,36 @@ var LoginPage = function LoginPage() {
   var isLogingIn = process === 1;
 
   var submit = function submit(values, actions) {
-    if (values.password === values.c_password) {
-      actions.setSubmitting(true);
+    actions.setSubmitting(true);
 
-      if (process === 1) {
-        Object(_api__WEBPACK_IMPORTED_MODULE_5__["requestLogin"])(values).then(function (_ref) {
-          var data = _ref.data;
-          console.log({
-            data: data
-          });
-        })["catch"](function (e) {
-          console.log('login error', e);
-          actions.setSubmitting(false);
+    if (isLogingIn) {
+      Object(_api__WEBPACK_IMPORTED_MODULE_5__["requestLogin"])(values).then(function (_ref) {
+        var data = _ref.data;
+        console.log({
+          data: data
         });
-      } else {
-        Object(_api__WEBPACK_IMPORTED_MODULE_5__["requestRegistry"])(values).then(function (_ref2) {
-          var data = _ref2.data;
-          console.log({
-            data: data
-          });
-          actions.setSubmitting(false);
-        })["catch"](function (e) {
-          console.log('reg error', e);
+      })["catch"](function (e) {
+        console.log('login error', e);
+        actions.setSubmitting(false);
+      });
+    } else if (!isLogingIn && values.password !== values.conf_password) {//show error msg or modal
+    } else {
+      Object(_api__WEBPACK_IMPORTED_MODULE_5__["requestRegistry"])(values).then(function (_ref2) {
+        var data = _ref2.data;
+        console.log({
+          data: data
         });
-      }
+        actions.setSubmitting(false);
+      })["catch"](function (e) {
+        console.log('reg error', e);
+      });
     }
   };
 
   var loginValidations = yup__WEBPACK_IMPORTED_MODULE_4__["object"]().shape({
-    name: yup__WEBPACK_IMPORTED_MODULE_4__["string"]().required(),
-    password: yup__WEBPACK_IMPORTED_MODULE_4__["string"]().required(),
-    conf_password: isLogingIn ? yup__WEBPACK_IMPORTED_MODULE_4__["string"]() : yup__WEBPACK_IMPORTED_MODULE_4__["string"]().required(),
+    name: yup__WEBPACK_IMPORTED_MODULE_4__["string"]().required().min(4),
+    password: yup__WEBPACK_IMPORTED_MODULE_4__["string"]().required().min(8),
+    conf_password: isLogingIn ? yup__WEBPACK_IMPORTED_MODULE_4__["string"]() : yup__WEBPACK_IMPORTED_MODULE_4__["string"]().required().min(8),
     email: yup__WEBPACK_IMPORTED_MODULE_4__["string"]().email().required()
   });
   return (/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(formik__WEBPACK_IMPORTED_MODULE_2__["Formik"], {
@@ -84757,7 +84756,7 @@ var LoginPage = function LoginPage() {
         })), !isLogingIn && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, trans('auth.form.confirm')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(formik__WEBPACK_IMPORTED_MODULE_2__["Field"], {
           name: "conf_password",
           type: "password",
-          className: 'form-field' + (errors.c_password && touched.c_password ? ' error' : '')
+          className: 'form-field' + (errors.conf_password && touched.conf_password ? ' error' : '')
         })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
           className: 'submit-form ' + (!isValid || isSubmitting ? 'inactive' : '')
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_3__["Icon"], {

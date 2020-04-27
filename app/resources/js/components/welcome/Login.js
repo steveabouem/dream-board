@@ -12,37 +12,36 @@ export const LoginPage = () => {
     const isLogingIn = process === 1;
 
     const submit = (values, actions) => {
+        actions.setSubmitting(true);
         
-        if ( values.password === values.c_password) {
-            actions.setSubmitting(true);
-            if (process === 1) {
-                requestLogin(values)
-                .then(({data}) => {
-                    console.log(({data}));
-                    
-                })
-                .catch((e) => {
-                    console.log('login error', e);
-                    actions.setSubmitting(false);
-                });
-    
-            } else {
-                requestRegistry(values)
-                .then(({data}) => {
-                    console.log(({data}));
-                    actions.setSubmitting(false);
-                })
-                .catch((e) => {
-                    console.log('reg error', e);
-                });
-            }
+        if (isLogingIn) {
+            requestLogin(values)
+            .then(({data}) => {
+                console.log({data});
+            })
+            .catch((e) => {
+                console.log('login error', e);
+                actions.setSubmitting(false);
+            });
+
+        } else  if ( !isLogingIn && values.password !== values.conf_password) {
+            //show error msg or modal
+        } else {
+            requestRegistry(values)
+            .then(({data}) => {
+                console.log({data});
+                actions.setSubmitting(false);
+            })
+            .catch((e) => {
+                console.log('reg error', e);
+            });
         }
     };
 
     const loginValidations = Yup.object().shape({
-        name: Yup.string().required(),
-        password: Yup.string().required(),
-        conf_password: isLogingIn ? Yup.string() : Yup.string().required(),
+        name: Yup.string().required().min(4),
+        password: Yup.string().required().min(8),
+        conf_password: isLogingIn ? Yup.string() : Yup.string().required().min(8),
         email: Yup.string().email().required(), 
     });
 
@@ -86,7 +85,7 @@ export const LoginPage = () => {
                             {!isLogingIn && (
                                 <li>
                                     <label>{trans('auth.form.confirm')}</label>
-                                    <Field name="conf_password" type="password" className={'form-field' + (errors.c_password && touched.c_password ? ' error' : '')}/>
+                                    <Field name="conf_password" type="password" className={'form-field' + (errors.conf_password && touched.conf_password ? ' error' : '')}/>
                                 </li>
                             )}
                             <span className={'submit-form ' + (!isValid || isSubmitting ? 'inactive' : '')}>

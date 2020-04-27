@@ -23,7 +23,6 @@ class UserController extends Controller
                 'email' => $request->email,
                 'password' => Hash::make($request->password),
             ]);
-            var_dump($user);
         } else {
             return response(['message' => __('auth.register.failed_existing')], 400);
         }

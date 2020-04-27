@@ -79,6 +79,11 @@ body ::-webkit-scrollbar {
   font-weight: 600;
 }
 
+.overlay-form .overlay-form-inner .form-title .right {
+  -webkit-animation: reveal 3s;
+          animation: reveal 3s;
+}
+
 .overlay-form .overlay-form-inner .form-title .right .pointer {
   color: white;
   font-weight: 600;
@@ -565,5 +570,25 @@ body ::-webkit-scrollbar {
 #client .app-footer-wrap div {
   flex: 1;
   text-align: center;
+}
+
+@-webkit-keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
