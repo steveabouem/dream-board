@@ -69,13 +69,13 @@ class RegisterController extends Controller
         $user = User::where('email', $request->email)->first();
         
             if (is_null($user)) {
-               User::create([
+               $newUser = User::create([
                     'name' => $request->name,
                     'email' => $request->email,
                     'password' => Hash::make($request->password),
                 ]);
                 
-                return 'Done';
+                return response($newUser, 200);
             } else {
                 return response(['message' => __('auth.register.failed_existing')], 400);
             }
