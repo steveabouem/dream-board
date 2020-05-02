@@ -1,23 +1,29 @@
 import React, { useContext, useState } from 'react';
 import { UserContext } from '../contexts';
 import { Formik, Field, Form } from 'formik';
-import { Icon } from '../common';
+import { Icon, Loader, OverlayLoader } from '../common';
 import * as Yup from 'yup';
 import { requestLogin, requestRegistry } from '../../api';
+import { useHistory } from 'react-router-dom';
+import { appRoutes } from '../common/routes';
 
 export const LoginPage = () => {
-    const { user } = useContext(UserContext);
+    const { user, updateUser } = useContext(UserContext);
     const [process, setProcess] = useState(1);
+    const [processing, isProcessing] = useState(false);
+    const [loading, isLoading] = useState(false);
 
     const isLogingIn = process === 1;
+    const history = useHistory();
 
     const submit = (values, actions) => {
         actions.setSubmitting(true);
-        
+        isProcessing(true);
+
         if (isLogingIn) {
             requestLogin(values)
             .then(({data}) => {
-                console.log({data});
+                history.push(appRoutes.DASHBOARD);
             })
             .catch((e) => {
                 console.log('login error', e);
@@ -29,15 +35,12 @@ export const LoginPage = () => {
         } else {
             requestRegistry(values)
             .then(({data}) => {
-                console.log({data});
-                actions.setSubmitting(false);
-                
+                history.push(appRoutes.DASHBOARD);
             })
             .catch((e) => {
                 console.log('reg error', e);
             });
         }
-        actions.resetForm();
     };
 
     const loginValidations = Yup.object().shape({
@@ -47,7 +50,7 @@ export const LoginPage = () => {
         email: Yup.string().email().required(), 
     });
 
-    return (
+    return loading ? <Loader/> : (
         <Formik
             onSubmit={(values, actions) => submit(values, actions)}
             initialValues={{
@@ -62,6 +65,7 @@ export const LoginPage = () => {
             {({ touched, errors, values, submitForm, isValid, isSubmitting, resetForm }) => (
                 <div className="overlay-form center">
                     <div className="overlay-form-inner">
+                        {processing && <OverlayLoader/>}
                         <div className="form-title">
                             <span className="left">{trans(`auth.form.${!isLogingIn ? 'register_title' : 'login_title'}`)}</span>
                             <span className="right">(

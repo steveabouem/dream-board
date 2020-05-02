@@ -19,6 +19,14 @@ body ::-webkit-scrollbar {
   display: none;
 }
 
+.overlay-loader {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(119, 199, 222, 0.45);
+  z-index: 20;
+}
+
 .line {
   border-bottom: 1px inset;
   width: 100%;
