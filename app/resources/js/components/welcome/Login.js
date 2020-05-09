@@ -19,10 +19,11 @@ export const LoginPage = () => {
     const submit = (values, actions) => {
         actions.setSubmitting(true);
         isProcessing(true);
-
         if (isLogingIn) {
-            requestLogin(values)
+            let payload = { name:values.name, email: values.email, password: values.password};
+            requestLogin(payload)
             .then(({data}) => {
+                updateUser(data);
                 history.push(appRoutes.DASHBOARD);
             })
             .catch((e) => {
@@ -35,7 +36,8 @@ export const LoginPage = () => {
         } else {
             requestRegistry(values)
             .then(({data}) => {
-                history.push(appRoutes.DASHBOARD);
+                updateUser(data);
+                history.push(appRoutes.PROFILE);
             })
             .catch((e) => {
                 console.log('reg error', e);

@@ -83947,7 +83947,7 @@ var Client = function Client() {
       allowLoginBar = _useState2[0],
       lockLoginBar = _useState2[1];
 
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true),
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null),
       _useState4 = _slicedToArray(_useState3, 2),
       user = _useState4[0],
       updateUser = _useState4[1];
@@ -83959,7 +83959,7 @@ var Client = function Client() {
         user: user,
         updateUser: updateUser
       }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_common__WEBPACK_IMPORTED_MODULE_6__["Header"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_menus_Topnav__WEBPACK_IMPORTED_MODULE_7__["Topnav"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_common__WEBPACK_IMPORTED_MODULE_6__["LoginBar"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_common__WEBPACK_IMPORTED_MODULE_6__["Content"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_common__WEBPACK_IMPORTED_MODULE_6__["Header"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_menus_Topnav__WEBPACK_IMPORTED_MODULE_7__["Topnav"], null)), !user && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_common__WEBPACK_IMPORTED_MODULE_6__["LoginBar"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_common__WEBPACK_IMPORTED_MODULE_6__["Content"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
       exact: true,
       path: _components_common_routes__WEBPACK_IMPORTED_MODULE_8__["appRoutes"].HOME,
       component: _components_welcome__WEBPACK_IMPORTED_MODULE_5__["Welcome"]
@@ -84724,8 +84724,14 @@ var LoginPage = function LoginPage() {
     isProcessing(true);
 
     if (isLogingIn) {
-      Object(_api__WEBPACK_IMPORTED_MODULE_5__["requestLogin"])(values).then(function (_ref) {
+      var payload = {
+        name: values.name,
+        email: values.email,
+        password: values.password
+      };
+      Object(_api__WEBPACK_IMPORTED_MODULE_5__["requestLogin"])(payload).then(function (_ref) {
         var data = _ref.data;
+        updateUser(data);
         history.push(_common_routes__WEBPACK_IMPORTED_MODULE_7__["appRoutes"].DASHBOARD);
       })["catch"](function (e) {
         console.log('login error', e);
@@ -84735,7 +84741,8 @@ var LoginPage = function LoginPage() {
     } else {
       Object(_api__WEBPACK_IMPORTED_MODULE_5__["requestRegistry"])(values).then(function (_ref2) {
         var data = _ref2.data;
-        history.push(_common_routes__WEBPACK_IMPORTED_MODULE_7__["appRoutes"].DASHBOARD);
+        updateUser(data);
+        history.push(_common_routes__WEBPACK_IMPORTED_MODULE_7__["appRoutes"].PROFILE);
       })["catch"](function (e) {
         console.log('reg error', e);
       });

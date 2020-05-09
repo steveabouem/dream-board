@@ -41,7 +41,7 @@ window.trans = (key, replace = [], locale = 'en') => window.lang.get(key, replac
 
 export const Client = () => {
    const [allowLoginBar, lockLoginBar] = useState(true);
-   const [user, updateUser] = useState(true);
+   const [user, updateUser] = useState(null);
 
     return (
         <Router>
@@ -52,7 +52,7 @@ export const Client = () => {
                     <Header>
                         <Topnav/>
                     </Header>
-                    <LoginBar/>
+                    {!user && <LoginBar/>}
                     <Content>
                         <Route exact path={appRoutes.HOME} component={Welcome}/>
                         <Route exact path={appRoutes.LOGIN} component={LoginPage}/>

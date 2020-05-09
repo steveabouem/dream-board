@@ -10,6 +10,12 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 use Illuminate\JsonResponse;
+use Tymon\JWTAuth\Facades\JWTAuth;
+use Tymon\JWTAuth\Facades\JWTFactory;
+use Tymon\JWTAuth\Exceptions\JWTException;
+use Tymon\JWTAuth\Contracts\JWTSubject;
+use Tymon\JWTAuth\PayloadFactory;
+use Tymon\JWTAuth\JWTManager as JWT;
 
 class RegisterController extends Controller
 {
@@ -75,7 +81,9 @@ class RegisterController extends Controller
                     'password' => Hash::make($request->password),
                 ]);
                 
-                return response($newUser, 200);
+                $token = JWTAuth::fromUser($newUser);
+
+                return response()->json(compact('user','token'),201);
             } else {
                 return response(['message' => __('auth.register.failed_existing')], 400);
             }
