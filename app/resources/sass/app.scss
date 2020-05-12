@@ -21,6 +21,14 @@ body {
     font-family: 'Abel', sans-serif!important;
 }
 
+.overlay-loader {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(119, 199, 222, 0.45);
+    z-index: 20;
+}
+
 .line {
     border-bottom: 1px inset;
     width: 100%;
@@ -76,6 +84,7 @@ body {
                 font-weight: 600;
            }
            .right {
+               animation: reveal 3s;
                .pointer {
                    color: white;
                    font-weight: 600;
@@ -586,3 +595,12 @@ body {
 
 
 // Keyframes_________________________________________________
+@keyframes reveal {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

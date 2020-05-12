@@ -19,6 +19,14 @@ body ::-webkit-scrollbar {
   display: none;
 }
 
+.overlay-loader {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(119, 199, 222, 0.45);
+  z-index: 20;
+}
+
 .line {
   border-bottom: 1px inset;
   width: 100%;
@@ -77,6 +85,11 @@ body ::-webkit-scrollbar {
 
 .overlay-form .overlay-form-inner .form-title .left {
   font-weight: 600;
+}
+
+.overlay-form .overlay-form-inner .form-title .right {
+  -webkit-animation: reveal 3s;
+          animation: reveal 3s;
 }
 
 .overlay-form .overlay-form-inner .form-title .right .pointer {
@@ -565,5 +578,25 @@ body ::-webkit-scrollbar {
 #client .app-footer-wrap div {
   flex: 1;
   text-align: center;
+}
+
+@-webkit-keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 

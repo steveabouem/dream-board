@@ -33,17 +33,26 @@ window.trans = (key, replace = [], locale = 'en') => window.lang.get(key, replac
 /*______________________________________________________________*/
 
 
+// COMMON STATE HOOKS : 
+// loader
+// const [loading, isLoading] = useState(false);
+// overlayloader
+// const [processing, isProcessing] = useState(false);
+
 export const Client = () => {
    const [allowLoginBar, lockLoginBar] = useState(true);
+   const [user, updateUser] = useState(null);
 
     return (
         <Router>
-            <UserContext.Provider value= {{allowLoginBar, lockLoginBar}}>
+            <UserContext.Provider value= {{
+                allowLoginBar, lockLoginBar, user, updateUser
+            }}>
                 <React.Fragment>
                     <Header>
                         <Topnav/>
                     </Header>
-                    <LoginBar/>
+                    {!user && <LoginBar/>}
                     <Content>
                         <Route exact path={appRoutes.HOME} component={Welcome}/>
                         <Route exact path={appRoutes.LOGIN} component={LoginPage}/>

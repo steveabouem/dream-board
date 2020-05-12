@@ -1,6 +1,6 @@
 import React, {useEffect, useState, useContext} from 'react';
 import { css } from "@emotion/core";
-import { RingLoader} from 'react-spinners';
+import { RingLoader, ClockLoader} from 'react-spinners';
 import { NavLink, useLocation } from 'react-router-dom';
 import { appRoutes } from './routes';
 import { Field } from 'formik';
@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Lang from 'lang.js';
 import { UserContext } from '../contexts';
 
+// for loading
 export const Loader = () => {
     const override = css `
         margin: 20% auto
@@ -18,6 +19,22 @@ export const Loader = () => {
             css={override}
             color={'#534fa0'}
         />
+    );
+};
+
+// for processing
+export const OverlayLoader = () => {
+    const override = css `
+        margin: 20% auto
+    `;
+
+    return (
+        <div className="overlay-loader">
+            <ClockLoader
+                css={override}
+                color={'#74839F'}
+            />
+        </div>
     );
 };
 
