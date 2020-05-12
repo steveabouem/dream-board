@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { appRoutes } from '../common/routes.js';
-import { LanguageSelector } from '../common/index.js';
+import { appRoutes } from '../routes.js';
+import { LanguageSelector } from '../index.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const Topnav = () => {

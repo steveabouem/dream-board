@@ -5,7 +5,7 @@ import { Dashboard } from './components/dashboard';
 import { Categories } from './components/categories';
 import { Welcome } from './components/welcome';
 import { Content, Header, LoginBar, Loader, Footer } from './components/common';
-import { Topnav } from './components/menus/Topnav';
+import { Topnav } from './components/common/menus/Topnav';
 import { appRoutes } from './components/common/routes';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';

@@ -40,6 +40,15 @@ body ::-webkit-scrollbar {
   cursor: pointer;
 }
 
+.center {
+  text-align: center;
+}
+
+.reveal {
+  -webkit-animation: reveal 0.5s ease !important;
+          animation: reveal 0.5s ease !important;
+}
+
 .content-header-wrap {
   text-align: center;
   font-size: 1.1em;
@@ -429,6 +438,22 @@ body ::-webkit-scrollbar {
   overflow: hidden scroll;
 }
 
+#client .content-wrap .content .dashboard-form-wrap {
+  height: 80%;
+  width: 100%;
+  margin: auto;
+}
+
+#client .content-wrap .content .dashboard-form-wrap .standard-form {
+  width: 80%;
+  margin: auto;
+  height: 100%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #client .content-wrap .content .dashboard-wrap {
   display: flex;
   height: 100%;
@@ -439,6 +464,7 @@ body ::-webkit-scrollbar {
   height: 100%;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 #client .content-wrap .content .dashboard-wrap .dashboard-left .commitment-wrap {
@@ -501,13 +527,12 @@ body ::-webkit-scrollbar {
   text-align: right;
   overflow: hidden scroll;
   position: relative;
+  background: white;
 }
 
 #client .content-wrap .content .dashboard-wrap .dashboard-sidebar .dashboard-sidebar-cell {
   color: #b3becc;
   padding: 10px;
-  background: white;
-  flex: 0 1 20%;
 }
 
 #client .content-wrap .content .dashboard-wrap .dashboard-sidebar .dashboard-sidebar-cell.title {
