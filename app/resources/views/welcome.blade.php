@@ -7,6 +7,8 @@
         <title>Dream Board</title>
         <!-- Styles -->
         <link href="{{mix('/css/app.css')}}" rel="stylesheet">
+        <!-- CSRF -->
+        <meta name="csrf-token" content="{{ csrf_token() }}">
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
@@ -15,5 +17,12 @@
     <body>
         <div id="client"></div>
         <script src="{{mix('/js/app.js')}}"></script>
+        <script>
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+        </script>
     </body>
 </html>

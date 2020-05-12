@@ -15,7 +15,7 @@ export const LoginPage = () => {
 
     const isLogingIn = process === 1;
     const history = useHistory();
-
+    
     const submit = (values, actions) => {
         actions.setSubmitting(true);
         isProcessing(true);
@@ -80,7 +80,7 @@ export const LoginPage = () => {
                         <ul>
                             <li className={'form-field-wrap ' + (errors.email && touched.email ? ' error' : '')}>
                                 <label>{trans('auth.form.username')}</label>
-                                <Field name="name" className={'form-field' + (errors.name && touched.name ? ' error' : '')}/>
+                                <Field name="name" className={'form-field' + (errors.name && touched.name ? ' error' : '')}  value={values.name.toLocaleLowerCase()}/>
                             </li>
                             <li>
                                 <label>{trans('auth.form.email')}</label>
