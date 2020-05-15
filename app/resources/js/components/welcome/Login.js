@@ -24,7 +24,7 @@ export const LoginPage = () => {
             requestLogin(payload)
             .then(({data}) => {
                 updateUser(data);
-                history.push(appRoutes.DASHBOARD);
+                history.push(appRoutes.DASHBOARD.INDEX);
             })
             .catch((e) => {
                 console.log('login error', e);

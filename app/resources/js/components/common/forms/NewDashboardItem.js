@@ -24,11 +24,10 @@ export const NewDashboardItem = ({ children, fields }) => {
                     <Formik 
                         initialValues={initialValues}
                         validationSchema={validations}
-
                     >
                         {({values, errors, touched, isSubmitting, submitForm, isValid}) => (
                             <React.Fragment>
-                                {fields.map((f, i ) => (
+                                {fields.map(f => (
                                     <li className={'form-field-wrap ' + (errors[f.name] && touched[f.name] ? ' error' : '')} key={`dashboard-field-${f.name}`}>
                                         <label>{f.label}</label>
                                         <Field name={f.name} className={'form-field' + (errors[f.name] && touched[f.name] ? ' error' : '')}/>
@@ -37,12 +36,12 @@ export const NewDashboardItem = ({ children, fields }) => {
                                 <span className={'submit-form ' + (!isValid || isSubmitting ? 'inactive' : '')}>
                                     <Icon icon="chevron-circle-right"  handleClick={() => isValid && !isSubmitting ? submitForm(values) : null}/>
                                 </span>
-
                             </React.Fragment>
                         )}
                     </Formik>
                 </ul>
             </div>
         </div>
+        
     );
 };

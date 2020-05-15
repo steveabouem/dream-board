@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, withRouter } from 'react-router-dom';
 import { Dashboard } from './components/dashboard';
-import { Categories } from './components/categories';
 import { Welcome } from './components/welcome';
 import { Content, Header, LoginBar, Loader, Footer } from './components/common';
 import { Topnav } from './components/common/menus/Topnav';
@@ -55,9 +54,8 @@ export const Client = () => {
                     {!user && <LoginBar/>}
                     <Content>
                         <Route exact path={appRoutes.HOME} component={Welcome}/>
-                        <Route exact path={appRoutes.LOGIN} component={LoginPage}/>
-                        <Route path={appRoutes.DASHBOARD} component={Dashboard}/>
-                        <Route path={appRoutes.CATEGORIES} component={Categories}/>
+                        <Route path={appRoutes.LOGIN} component={LoginPage}/>
+                        <Route path={appRoutes.DASHBOARD.INDEX} component={Dashboard}/>
                     </Content>
                     <Footer/>
                 </React.Fragment>

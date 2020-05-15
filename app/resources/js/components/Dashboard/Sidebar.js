@@ -1,17 +1,17 @@
 import React from 'react';
 import { Icon } from '../common';
 import { NavLink } from 'react-router-dom';
-import { appRoutes } from '../common/routes';
+import { dashboardRoutes } from '../common/routes';
 
 export const Sidebar = () => {
 
     return (
         <div className="dashboard-sidebar">
             <div className="dashboard-sidebar-cell title">
-                <NavLink to={appRoutes.FOLDERS.INDEX}>
+                <NavLink to={dashboardRoutes.FOLDERS.INDEX}>
                     FOLDERS
                 </NavLink>
-                <NavLink to={appRoutes.FOLDERS.NEW}>
+                <NavLink to={dashboardRoutes.NEW_ITEM.FOLDER}>
                     &nbsp;<Icon icon="plus" />
                 </NavLink>
             </div>
@@ -21,12 +21,11 @@ export const Sidebar = () => {
                 </div> */}
             <div className="line" />
 
-
-            <div className="dashboard-sidebar-cell title">
-                <NavLink to={appRoutes.CATEGORIES.INDEX}>
+            <div className="dashboadashboardRoutesrd-sidebar-cell title">
+                <NavLink to={dashboardRoutes.CATEGORIES.INDEX}>
                     CATEGORIES
                 </NavLink>
-                <NavLink to={appRoutes.CATEGORIES.NEW}>
+                <NavLink to={dashboardRoutes.NEW_ITEM.CATEGORY}>
                     &nbsp;<Icon icon="plus" />
                 </NavLink>
             </div>
@@ -38,10 +37,10 @@ export const Sidebar = () => {
             <div className="line" />
 
             <div className="dashboard-sidebar-cell title">
-                <NavLink  to={appRoutes.COMMITMENTS.INDEX}>
+                <NavLink  to={dashboardRoutes.COMMITMENTS.INDEX}>
                     COMMITMENTS
                 </NavLink>
-                <NavLink  to={appRoutes.COMMITMENTS.NEW}>
+                <NavLink  to={dashboardRoutes.NEW_ITEM.COMMITMENT}>
                     &nbsp;<Icon icon="plus" />
                 </NavLink>
             </div>

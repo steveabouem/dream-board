@@ -25,7 +25,7 @@ export const Topnav = () => {
                 <input/>
                 <FontAwesomeIcon icon="search" className="top-search-icon"/>
             </div>
-            <NavLink className="nav-cell" activeClassName="active" to={appRoutes.DASHBOARD}>
+            <NavLink className="nav-cell" activeClassName="active" to={appRoutes.DASHBOARD.INDEX}>
                 <div>
                     {trans('menus.topnav.links.dashboard')}
                 </div>
