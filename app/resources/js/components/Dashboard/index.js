@@ -9,8 +9,6 @@ import { NewDashboardItem } from '../common/forms/NewDashboardItem';
 
 export const Dashboard = () => {
     const [loaded, setLoaded] = useState(true);
-    const foldersProps = [{ name: 'name', label: 'Create a new :item', type: 'string' }];
-    // const commitmentsProps = {fields: [{name: 'name', label: 'Create a new :item', type: 'string'}]};
 
     return !loaded ? (
         <Loader />
@@ -19,9 +17,11 @@ export const Dashboard = () => {
         <div className="dashboard-wrap">
             <div className="dashboard-left">
                     <Switch>
-                        <Route exact path={dashboardRoutes.NEW_ITEM.FOLDER} render={() => <NewDashboardItem fields={foldersProps}/>} />
+                        <Route path={dashboardRoutes.NEW_ITEM.FOLDER} render={() => <NewDashboardItem />} />
+                        <Route path={dashboardRoutes.NEW_ITEM.CATEGORY} render={() => <NewDashboardItem />} />
+                        <Route path={dashboardRoutes.NEW_ITEM.COMMITMENT} render={() => <NewDashboardItem/>} />
 
-                        <Route path='/' render={() => <DashboardMain />} />
+                        <Route exact path='/' render={() => <DashboardMain />} />
                         <Route path={appRoutes.COMMITMENTS.ID} render={() => <CommitmentDetails />} />
 
                         <Route path="/stats" render={() => <CommitmentsView/>}/>
