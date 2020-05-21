@@ -11,6 +11,8 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 import { UserContext } from './components/contexts';
 import Lang from 'lang.js';
 import {locales} from '../lang/js/locales';
+import "react-datepicker/dist/react-datepicker.css";
+
 
 /*FONT AWESOME ICONS____________________________________________*/
 import { 

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Sidebar } from './Sidebar';
 import { CommitmentsView, CommitmentDetails } from './commitment';
-import { Loader, Content, ContentHeader } from '../common';
+import { Loader, ContentHeader } from '../common';
 import { MemoryRouter, Switch, Route } from 'react-router-dom';
 import { appRoutes, dashboardRoutes } from '../common/routes';
 import { NewDashboardItem } from '../common/forms/NewDashboardItem';
